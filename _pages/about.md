@@ -11,7 +11,7 @@ I am **Junseok Lee**, a master's student in Statistics at Seoul National Univers
 
 I am currently working on conformal density estimation methods for synthetic data generation, with a particular interest in high-dimensional settings.
 
-Before joining SNU, I studied Psychology, Statistics, and Mathematics at Sungkyunkwan University, where I graduated valedictorianwith summa cum laude honors.
+Before joining SNU, I studied Psychology, Statistics, and Mathematics at Sungkyunkwan University, where I graduated valedictorian with summa cum laude honors.
 
 My broader goal is to develop reliable statistical methods that make **minimal assumptions while providing strong guarantees**, especially in settings where classical modeling assumptions may be difficult to justify. This perspective was shaped in part by my background in the social sciences.
 
