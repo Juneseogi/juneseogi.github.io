@@ -8,8 +8,8 @@ My research focuses on model-free statistical inference and related problems in 
 
 ## Research Interests
 
+- Model-free inference
 - Conformal prediction
-- Distribution-free inference
 - Conditional independence testing
 - Causal inference
 - Psychometrics
