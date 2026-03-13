@@ -25,18 +25,18 @@ author_profile: true
 ## Mathematics
 
 ### Graduate level
-- Real Analysis 1
+- Real Analysis (Stein)
 - Applications of Partial Differential Equations (Evans)
 - Advanced Topology (Algebraic Topology, Hatcher)
 - Probability and Statistics
-- Financial Mathematics
+- Financial Mathematics (Stochastic Differential Equations)
 - Probabilistic Generative Model
 
 ### Undergraduate level
 - Calculus 1, 2
 - Linear Algebra 1, 2
 - Analysis 1, 2
-- Topology 1
+- Topology 1, 2
 - Differential Equations
 - Modern Algebra 1
 - Complex Analysis 1
