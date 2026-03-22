@@ -27,6 +27,6 @@ My broader goal is to develop reliable statistical methods that make **minimal a
 For further information about my academic background and research, please refer to my comprehensive [CV](/files/CV_Junseok.pdf).
 
 ## Contact
-If you have any quesitions for me, please feel free to reach out via email:
+If you have any quesitions about me, please feel free to reach out via email:
 **juneseogi@snu.ac.kr**  
 
