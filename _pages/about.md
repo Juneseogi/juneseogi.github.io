@@ -7,6 +7,7 @@ redirect_from:
 ---
 
 Hi, I'm **Junseok Lee (이준석)!**
+
 I am a master's student in Statistics at Seoul National University and a member of the Model-Free Statistical Methods Lab, advised by Professor Haeun Moon. My research centers on model-free statistical inference and related methods and applications. 
 My research interests include:
 
