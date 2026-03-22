@@ -6,13 +6,15 @@ author_profile: true
 
 This page contains course materials for Nonparametric Statistics and Lab (326.414).
 
-## Practice Problems
+### Week 2 
 
-- [Week 2](/files/Week2_실습문제.pdf)
-- [Week 4](/files/Week4_실습문제.pdf)
+- [Practice Problem](/files/Week2_실습문제.pdf)
+- [Solution](/files/Week2_실습문제_풀이.pdf)
 
+### Week 3
+- [R Practice Lecture Note](/files/Lab1.html)
 
-## Solutions 
+### Week 4 
 
-- [Week 2](/files/Week2_실습문제_풀이.pdf)
-- [Week 4](/files/Week4_실습문제_풀이.pdf)
+- [Practice Problem](/files/Week4_실습문제.pdf)
+- [Solution](/files/Week4_실습문제_풀이.pdf)
