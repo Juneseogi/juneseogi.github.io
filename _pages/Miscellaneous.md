@@ -44,7 +44,7 @@ author_profile: true
 - Differential Geometry I, II
 - Real Variables
 - Topics in Analysis
-- Computer-Aided Applied Mathematics
+- Computational Mathematics
 
 ## Academic Service
 
