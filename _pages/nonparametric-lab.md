@@ -1,9 +1,7 @@
 ---
 permalink: /teaching/nonparametric-lab/
-title: "Nonparametric Statistics and Lab Materials"
 author_profile: true
 ---
-
 This page contains course materials for Nonparametric Statistics and Lab (326.414).
 
 ### Week 1
