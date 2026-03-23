@@ -3,7 +3,7 @@ permalink: /teaching/dataanalysis-lab/
 author_profile: true
 ---
 
-This page contains course materials for Data Analysis and Lab (R).
+This page contains course materials for Data Analysis and Lab (M1399.001400).
 
 ## Week 1. R & R Markdown Intro
 - [Lecture Note](https://drive.google.com/file/d/18MmV9D1q7k-Pxwtjljvsq_ivDva6uq-T/view?usp=drive_link)
