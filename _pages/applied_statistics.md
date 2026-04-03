@@ -17,4 +17,4 @@ This page contains study materials for Applied Statistics (Graduate-Level Linear
 - [Winter](/files/appstat_2017_winter.pdf)
 
 ### 2016
-- [Summer](/files/appstat_2017_summer.pdf)
+- [Summer](/files/appstat_2016_summer.pdf)
