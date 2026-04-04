@@ -6,6 +6,7 @@ This page contains study materials for Applied Statistics (Graduate-Level Linear
 
 ## Qual Exam Solutions
 ### 2025
+- [Spring](/files/appstat_2025_spring.pdf)
 - [Summer](/files/appstat_2025_summer.pdf)
 
 ### 2023
