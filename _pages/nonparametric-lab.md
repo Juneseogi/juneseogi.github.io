@@ -33,3 +33,8 @@ This page contains course materials for Nonparametric Statistics and Lab (326.41
 ### Week 8
 - [Practice Problem](/files/Week8_실습문제.pdf)
 - [Solution](/files/Week8_실습문제_풀이.pdf)
+
+### Week 10
+- [R Practice Lecture Note](/files/Lab3.html)
+- [TA's Handwriting](/files/Week10_실습수업_필기.pdf)
+
