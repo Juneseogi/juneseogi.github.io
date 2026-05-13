@@ -12,7 +12,7 @@ author_profile: true
 - Theory of Statistics I, II
 - Applied Statistics [[Study materials]](/Miscellaneous/applied_statistics/)
 - Statistical Machine Learning
-- Deep Learning: A Statistical Perspective
+- Deep Learning: Statistical Perspective
 
 ### Undergraduate Level
 - Statistics
@@ -26,7 +26,7 @@ author_profile: true
 
 ### Graduate Level
 - Real Analysis
-- Applications of Partial Differential Equations
+- Advanced Partial Differential Equations
 - Advanced Topology
 - Probability and Statistics
 - Financial Mathematics
