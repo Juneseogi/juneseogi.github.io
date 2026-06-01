@@ -3,19 +3,19 @@ permalink: /research/
 author_profile: true
 ---
 
-My research focuses on model-free statistical inference and related problems in prediction, distributional estimation, and statistical methodology.
+My research focuses on statistical analysis for complex data structures, particularly non-Euclidean data and data observed with measurement error, with related interests in statistical methodology and applications.
 
 ## Research Interests
 
-- Model-free statistical inference
-- Conformal prediction
-- Conditional independence testing
-- Nonparametric function estimation
-- Psychometrics
-- Applications in the social sciences
+* Non-Euclidean statistical analysis
+* Measurement error
+* Nonparametric statistical inference
+* Psychometrics
+* Applications in the social sciences
 
 ## Current Research
 
-I am currently developing conformal distribution estimation methods for synthetic data generation within the localized conformal prediction framework.
+I am currently interested in statistical inference for non-Euclidean and error-contaminated data, including problems in regression, density estimation, and related methodology.
 
-More broadly, I am interested in reliable statistical methods that achieve strong estimation accuracy under limited modeling assumptions.
+More broadly, I aim to develop statistical methods for structured data arising in scientific and social science applications.
+
