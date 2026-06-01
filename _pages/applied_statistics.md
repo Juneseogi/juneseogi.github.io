@@ -41,3 +41,5 @@ This page contains study materials for Applied Statistics (Graduate-Level Linear
 - [Assignment#2](/files/응용통계_과제2_이준석.pdf)
 - [Assignment#3](/files/응용통계_과제3_이준석.pdf)
 - [Assignment#4](/files/응용통계_과제4_이준석.pdf)
+- [Assignment#5](/files/응용통계_과제5_이준석.pdf)
+- [Assignment#6](/files/응용통계_과제6_이준석.pdf)
