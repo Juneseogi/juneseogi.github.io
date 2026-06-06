@@ -34,7 +34,8 @@ This page contains study materials for Applied Statistics (Graduate-Level Linear
 - [Summer](/files/appstat_2016_summer.pdf)
 
 ## Semester Exam Solutions
-- [Midterm](/files/appstat_2025_spring.pdf)
+- [Midterm](/files/appstat_2025_midterm.pdf)
+- [Final](/files/appstat_2025_final.pdf)
 
 ## Assignment Solutions
 - [Assignment#1](/files/응용통계_과제1_이준석.pdf)
