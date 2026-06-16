@@ -5,7 +5,7 @@ author_profile: true
 This page contains study materials for Applied Statistics (Graduate-Level Linear Models) (326.520A).
 
 ## Lecture Notes
-- [Handwritten Study Notes](https://drive.google.com/file/d/1ICURw4_kN7Qqv-gN1j2KQarga8AzDZLq/view?usp=drive_link)
+- [Lecture Notes](https://drive.google.com/file/d/1ICURw4_kN7Qqv-gN1j2KQarga8AzDZLq/view?usp=drive_link)
 
 ## Qual Exam Solutions
 ### 2025
