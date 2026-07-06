@@ -16,10 +16,10 @@ author_profile: true
 
 ### Undergraduate Level
 - Statistics
-- Introduction to Mathematical Statistics
-- Introduction to Statistical Programming (R)
-- Introduction to Regression Analysis
-- Introduction to Statistical Inference
+- Mathematical Statistics
+- Statistical Programming (R)
+- Regression Analysis
+- Statistical Inference
 - Stochastic Processes
 
 ### Mathematics
@@ -44,4 +44,16 @@ author_profile: true
 - Real Variables
 - Topics in Analysis
 - Computational Mathematics
+
+### Psychology
+- Cognitive Psychology
+- Social Psychology
+- Research Methods in Social Sciences
+- Statistical Analysis
+- Statistics in Psychology
+- Culture Psychology
+- Group Psychology
+- Psychology of Learning and Memory
+- Psychological Testing and Measurement
+- Counseling
 
