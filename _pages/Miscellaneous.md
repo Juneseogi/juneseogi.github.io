@@ -48,12 +48,14 @@ author_profile: true
 ### Psychology
 - Cognitive Psychology
 - Social Psychology
+- Clinical Psychology
 - Research Methods in Social Sciences
 - Statistical Analysis
 - Statistics in Psychology
 - Culture Psychology
 - Group Psychology
 - Psychology of Learning and Memory
+- Psychology of Perception
 - Psychological Testing and Measurement
 - Counseling
 
