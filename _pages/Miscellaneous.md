@@ -32,7 +32,6 @@ author_profile: true
 - Probability and Statistics
 - Financial Mathematics
 - Probabilistic Generative Models
-- Mathematical Algorithms II (Optimization Theory)
 
 ### Undergraduate Level
 - Calculus I, II
