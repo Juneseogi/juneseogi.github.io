@@ -13,6 +13,7 @@ author_profile: true
 - Applied Statistics [[Study materials]](/Miscellaneous/applied_statistics/)
 - Statistical Machine Learning
 - Deep Learning: Statistical Perspective
+- Categorical Data Analysis
 
 ### Undergraduate Level
 - Statistics
