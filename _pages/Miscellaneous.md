@@ -32,7 +32,6 @@ author_profile: true
 - Probability and Statistics
 - Financial Mathematics
 - Probabilistic Generative Models
-- Lie Algebra
 
 ### Undergraduate Level
 - Calculus I, II
