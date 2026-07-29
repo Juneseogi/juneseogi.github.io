@@ -3,8 +3,6 @@ permalink: /research/
 author_profile: true
 ---
 
-My research focuses on statistical analysis for complex data structures, particularly non-Euclidean data and data observed with measurement error, with related interests in statistical methodology and applications.
-
 ## Research Interests
 
 * Non-Euclidean statistical analysis
