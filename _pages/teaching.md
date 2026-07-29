@@ -3,8 +3,6 @@ permalink: /teaching/
 author_profile: true
 ---
 
-I enjoy helping students develop practical skills in statistical computing with R and Python through hands-on data analysis and programming. I am particularly interested in supporting students as they build confidence in working with real data, interpreting results, and applying statistical ideas in practice.
-
 ## Teaching Experience
 
 ### Seoul National University
