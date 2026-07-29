@@ -13,9 +13,17 @@ My research focuses on statistical analysis for complex data structures, particu
 * Psychometrics
 * Applications in the social sciences
 
-## Current Research
+## Publications
+- **Lee, J.** and Jeon, J. (2026+). **Fejér-Positive Sieve Likelihood for Circular Measurement Error Models without Auxiliary Data.**, *Preprint, To be submitted.*
 
-I am currently interested in statistical inference for non-Euclidean and error-contaminated data, including problems in regression, density estimation, and related methodology.
 
-More broadly, I aim to develop statistical methods for structured data arising in scientific and social science applications.
+## Presentations
+### Seoul National University
+- Invited Talk, *Kyushu–SNU Statistics and Data Science Workshop*, Fukuoka, Japan, Nov. 2025  
+  **Constructing Conformal Predictive Distributions via Kernel-Localized Residuals**  
+  [[Slides]](/files/SNU_Kyushu_Workshop.pdf)
 
+### Sungkyunkwan University
+- Presenter, *The 15th Psychology Research Conference, Sungkyunkwan University*, Seoul, Korea, Nov. 2019
+
+- Presenter, *Korean Psychological Association Summer Conference (Undergraduate Poster Session)*, Seoul, Korea, Aug. 2019
