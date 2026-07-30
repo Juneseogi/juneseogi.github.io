@@ -12,7 +12,7 @@ author_profile: true
 * Applications in the social sciences
 
 ## Publications
-- **Lee, J.** and Jeon, J. (2026+). **Fejér-Positive Sieve Likelihood for Circular Measurement Error Models without Auxiliary Data.**, *Preprint, Submitted.*
+- **Lee, J.** and Jeon, J. (2026+). **Fejér-Positive Sieve Likelihood for Circular Measurement Error Models without Auxiliary Data.**, *Submitted.*
 
 
 ## Presentations
