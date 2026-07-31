@@ -3,8 +3,8 @@ permalink: /teaching/nonparametric-lab/
 author_profile: true
 ---
 This page contains course materials for Nonparametric Statistics and Lab (326.414).<br>
-These materials were developed with reference to the following textbook:<br>
-Sungkyu Jung, *Nonparametric Statistics with R*, Free Academy, 2022. <br>  
+These materials were developed with reference to the following textbook:  
+Sungkyu Jung, *Nonparametric Statistics with R*, Free Academy, 2022.  
 Korean title: *비모수통계학 with R*<br>
 
 ### Week 1
