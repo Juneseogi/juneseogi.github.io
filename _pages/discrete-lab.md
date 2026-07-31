@@ -2,10 +2,10 @@
 permalink: /teaching/discrete-lab/
 author_profile: true
 ---
-This page contains course materials for Discrete Data Analysis and Lab (326.314).
+This page contains course materials for Discrete Data Analysis and Lab (326.314).<br>
 
 These materials were developed with reference to the following textbook:
-Alan Agresti, *An Introduction to Categorical Data Analysis*, 2nd ed., Wiley, 2007.
+**Alan Agresti, *An Introduction to Categorical Data Analysis*, 2nd ed., Wiley, 2007.**
 
 ### Week 1
 
