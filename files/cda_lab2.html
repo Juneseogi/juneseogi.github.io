@@ -9,7 +9,7 @@
 <meta name="author" content="Junseok Lee">
 <meta name="dcterms.date" content="2026-09-19">
 
-<title>quarto-input54fe61403036fde5</title>
+<title>quarto-input6f19821a5995e4fb</title>
 <style>
 
 span.smallcaps{font-variant: small-caps;}
@@ -3746,25 +3746,48 @@ data:
 <p>독립모형의 기대도수는 <span class="math inline">\(\hat\mu_{ij}=n_{i+}n_{+j}/n\)</span>이다. Pearson <span class="math inline">\(\chi^2\)</span>와 우도비(Likelihood ratio) <span class="math inline">\(G^2\)</span>는 표 전체의 독립성을 검정하며, 표본이 충분히 크면 비슷한 결과를 낸다. 유의한 결과가 나오면 표준화 잔차로 어느 셀이 독립모형에서 벗어나는지 확인한다.</p>
 <p>There are two ways to perform it, chi-squared test and likelihood ratio test.</p>
 <p><br></p>
-<div style="text-align:center">
-<p><span class="math inline">\(\displaystyle \boldsymbol{H_0 : \pi_{ij} = \pi_{i+}\pi_{+j}}\)</span> for all <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span></p>
-</div>
+<p><span class="math display">\[
+\mathbf{H}_0:\quad
+\pi_{ij}=\pi_{i+}\pi_{+j}
+\quad \text{for all } i \text{ and } j
+\]</span></p>
 <p><br></p>
 <ul>
-<li>(Pearson) Chi-Squared test
-<ul>
-<li><span class="math inline">\(\displaystyle \chi^2 = \sum\frac{(n_{ij}-\mu_{ij})^2}{\mu_{ij}}\)</span></li>
-</ul></li>
-<li>Likelihood Ratio Statistic
-<ul>
-<li><span class="math inline">\(\displaystyle G^2 = 2\sum n_{ij}\log(\frac{n_{ij}}{\mu_{ij}})\)</span></li>
-</ul></li>
-<li>larger values provide stronger evidence against <span class="math inline">\(H_0\)</span>.</li>
-<li><span class="math inline">\(df = (r-1)(c-1)\)</span> for <span class="math inline">\(r\times c\)</span> contingency tables.</li>
-<li>Standardized residual :
-<div style="text-align:center">
-<p><span class="math inline">\(\displaystyle \frac{n_{ij}-\hat{\mu}_{ij}}{\sqrt{\hat{\mu}_{ij}(1-\hat{\pi}_{i+})(1-\hat{\pi}_{+j})}} = \frac{n(\hat{\pi}_{ij}-\hat{\pi}_{i+}\hat{\pi}_{+j})}{\sqrt{n\hat{\pi}_{i+}\hat{\pi}_{+j}(1-\hat{\pi}_{i+})(1-\hat{\pi}_{+j})}}\)</span></p>
-</div></li>
+<li><p><strong>Pearson chi-squared statistic</strong> <span class="math display">\[
+\chi^2
+=
+\sum_{i=1}^{r}\sum_{j=1}^{c}
+\frac{(n_{ij}-\hat{\mu}_{ij})^2}{\hat{\mu}_{ij}}
+\]</span></p></li>
+<li><p><strong>Likelihood-ratio statistic</strong> <span class="math display">\[
+G^2
+=
+2\sum_{i=1}^{r}\sum_{j=1}^{c}
+n_{ij}\log\left(\frac{n_{ij}}{\hat{\mu}_{ij}}\right)
+\]</span></p></li>
+<li><p>Larger values provide stronger evidence against <span class="math inline">\(H_0\)</span>.</p></li>
+<li><p>For an <span class="math inline">\(r\times c\)</span> contingency table, <span class="math display">\[
+df=(r-1)(c-1).
+\]</span></p></li>
+<li><p><strong>Standardized residual</strong> <span class="math display">\[
+\frac{n_{ij}-\hat{\mu}_{ij}}
+{\sqrt{
+  \hat{\mu}_{ij}
+  (1-\hat{\pi}_{i+})
+  (1-\hat{\pi}_{+j})
+}}
+=
+\frac{
+  n(\hat{\pi}_{ij}-\hat{\pi}_{i+}\hat{\pi}_{+j})
+}
+{
+  \sqrt{
+    n\hat{\pi}_{i+}\hat{\pi}_{+j}
+    (1-\hat{\pi}_{i+})
+    (1-\hat{\pi}_{+j})
+  }
+}.
+\]</span></p></li>
 </ul>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Political <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">&quot;https://raw.githubusercontent.com/alanagresti/categorical-data/master/Political.dat&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>) <span class="do">## Ch.2 slide 63</span></span>
