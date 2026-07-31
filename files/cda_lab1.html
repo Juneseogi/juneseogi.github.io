@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Junseok Lee">
+<meta name="dcterms.date" content="2026-09-19">
+
+<title>quarto-input7c66ea55008b54a5</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="cda_lab1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="cda_lab1_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="cda_lab1_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="cda_lab1_files/libs/quarto-html/popper.min.js"></script>
+<script src="cda_lab1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="cda_lab1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="cda_lab1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="cda_lab1_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="cda_lab1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="cda_lab1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="cda_lab1_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="cda_lab1_files/libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
+<script src="cda_lab1_files/libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">1. Introduction</a>
+  <ul>
+  <li><a href="#statistical-distributions" id="toc-statistical-distributions" class="nav-link" data-scroll-target="#statistical-distributions">Statistical Distributions</a></li>
+  <li><a href="#basic-asymptotic-properties" id="toc-basic-asymptotic-properties" class="nav-link" data-scroll-target="#basic-asymptotic-properties">Basic Asymptotic properties</a></li>
+  <li><a href="#statistical-inference-for-a-proportion" id="toc-statistical-inference-for-a-proportion" class="nav-link" data-scroll-target="#statistical-inference-for-a-proportion">Statistical inference for a proportion</a>
+  <ul>
+  <li><a href="#example-surveyed-opinions-about-legalized-abortion-n-1810-yes-837-no-973" id="toc-example-surveyed-opinions-about-legalized-abortion-n-1810-yes-837-no-973" class="nav-link" data-scroll-target="#example-surveyed-opinions-about-legalized-abortion-n-1810-yes-837-no-973">[Example : Surveyed opinions about legalized abortion] (n = 1810, Yes = 837, No = 973)</a></li>
+  <li><a href="#mid-p-value" id="toc-mid-p-value" class="nav-link" data-scroll-target="#mid-p-value">Mid P-value</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#contingency-table" id="toc-contingency-table" class="nav-link" data-scroll-target="#contingency-table">2. Contingency Table</a>
+  <ul>
+  <li><a href="#difference-of-proportions" id="toc-difference-of-proportions" class="nav-link" data-scroll-target="#difference-of-proportions">Difference of Proportions</a>
+  <ul>
+  <li><a href="#example-aspirin-use-and-myocardial-infarction" id="toc-example-aspirin-use-and-myocardial-infarction" class="nav-link" data-scroll-target="#example-aspirin-use-and-myocardial-infarction">[Example : Aspirin Use and Myocardial Infarction]</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><p>Lab 1.</p>
+<p>Introduction and Contingency Table</p></h1>
+<p class="subtitle lead">Discrete Data Analysis and Lab. (326.314)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Junseok Lee </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 19, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+<section id="statistical-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-distributions">Statistical Distributions</h3>
+<p>R의 분포 함수는 접두사로 구분한다. <code>d*</code>는 한 점의 확률질량 또는 밀도, <code>p*</code>는 누적확률 <span class="math inline">\(P(X\le x)\)</span>, <code>q*</code>는 분위수, <code>r*</code>는 난수 생성 함수이다. 이산분포에서 <code>d*</code>는 정확한 확률질량을 반환하며, <code>lower.tail = FALSE</code>는 오른쪽 꼬리확률을 계산한다.</p>
+<p>R has several built-in statistical distributions. For each distribution four functions are available,</p>
+<ul>
+<li><strong>r</strong> : random number generator</li>
+<li><strong>d</strong> : density function</li>
+<li><strong>p</strong> : cumulative distribution function</li>
+<li><strong>q</strong> : quantile function</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Distribution</th>
+<th>Function name</th>
+<th>Additional Arguments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>binomial</td>
+<td>binom</td>
+<td>size, prob</td>
+</tr>
+<tr class="even">
+<td>beta</td>
+<td>beta</td>
+<td>shape1, shape2, ncp(noncentrality parameter)</td>
+</tr>
+<tr class="odd">
+<td>chi-squared</td>
+<td>chisq</td>
+<td>df, ncp</td>
+</tr>
+<tr class="even">
+<td>normal</td>
+<td>norm</td>
+<td>mean, sd</td>
+</tr>
+<tr class="odd">
+<td>t</td>
+<td>t</td>
+<td>df, ncp</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>f</td>
+<td>df1, df2, ncp</td>
+</tr>
+<tr class="odd">
+<td>poisson</td>
+<td>pois</td>
+<td>mean</td>
+</tr>
+<tr class="even">
+<td>uniform</td>
+<td>unif</td>
+<td>min, max</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">*</span><span class="fu">pnorm</span>(<span class="sc">-</span><span class="fl">1.96</span>) <span class="co"># 2*(standard normal cumulative prob below -1.96) : essentially equals 0.05</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.04999579</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(<span class="fl">1.96</span><span class="sc">^</span><span class="dv">2</span>, <span class="dv">1</span>) <span class="co"># chi-squared cumul. prob. at 3.84 with df = 1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.9500042</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(<span class="fl">1.96</span><span class="sc">^</span><span class="dv">2</span>, <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>) <span class="co"># right-tail prob. </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.04999579</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qchisq</span>(<span class="fl">0.95</span>,<span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.841459</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#dnorm(0, 0, 1)*sqrt(2*pi)</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">curve</span>(<span class="fu">dchisq</span>(x, <span class="at">df=</span><span class="dv">3</span>), <span class="at">from=</span><span class="dv">0</span>, <span class="at">to=</span><span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="cda_lab1_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2023-09-19</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>values<span class="ot">&lt;-</span><span class="fu">rchisq</span>(<span class="dv">10000</span>,<span class="at">df=</span><span class="dv">3</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(values)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="cda_lab1_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="basic-asymptotic-properties" class="level3">
+<h3 class="anchored" data-anchor-id="basic-asymptotic-properties">Basic Asymptotic properties</h3>
+<p>대수의 법칙(The Law of Large Numbers)은 표본비율 <span class="math inline">\(\hat\pi\)</span>가 표본크기가 커질수록 참비율 <span class="math inline">\(\pi\)</span>에 가까워짐을 뜻한다. 중심극한정리(Central Limit Theorem, CLT)는 <span class="math inline">\(\sqrt{n}(\hat\pi-\pi)/\sqrt{\pi(1-\pi)}\)</span>의 분포가 표준정규분포에 가까워짐을 뜻한다. 이항분포의 정규근사는 보통 <span class="math inline">\(n\pi\)</span>와 <span class="math inline">\(n(1-\pi)\)</span>가 모두 약 5 이상일 때 안정적이다.</p>
+<p>There are some basic large-sample(or asymptotic) properties essential in statistical inferences.</p>
+<ul>
+<li>The Law of Large numbers<br>
+Suppose <span class="math inline">\(X_1, X_2, \cdots, X_n \sim (\mu, \sigma^2)\)</span>.<br>
+Then <span class="math inline">\(\bar{X}=\frac{1}{n}\sum\limits_{i=1}^n X_i \xrightarrow{p}\mu\)</span>.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fl">0.7</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>phat<span class="ot">&lt;-</span><span class="dv">0</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="dv">0</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  n[i]<span class="ot">&lt;-</span><span class="dv">10</span><span class="sc">^</span>i</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  X<span class="ot">&lt;-</span><span class="fu">rbinom</span>(n[i],<span class="dv">1</span>,p)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  phat[i]<span class="ot">&lt;-</span><span class="fu">sum</span>(X)<span class="sc">/</span>n[i]</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">log10</span>(n),phat, <span class="at">ylim=</span><span class="fu">c</span>(<span class="fl">0.3</span>,<span class="dv">1</span>));<span class="fu">abline</span>(<span class="at">h=</span><span class="fl">0.7</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">col=</span><span class="st">'red'</span>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>){</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    n[i]<span class="ot">&lt;-</span><span class="dv">10</span><span class="sc">^</span>i</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    X<span class="ot">&lt;-</span><span class="fu">rbinom</span>(n[i],<span class="dv">1</span>,p)</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    phat[i]<span class="ot">&lt;-</span><span class="fu">sum</span>(X)<span class="sc">/</span>n[i]</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">points</span>(phat)</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="cda_lab1_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Central Limit Theorem<br>
+Suppose <span class="math inline">\(X_1, X_2, \cdots, X_n \sim (\mu, \sigma^2)\)</span>.<br>
+Then <span class="math inline">\(\frac{\sqrt{n}(\bar{X}-\mu)}{\sigma} \xrightarrow{d}N(0,1)\)</span>.<br>
+Especially, binomial distribution <span class="math inline">\(B(n,p)\)</span> can be approximated by <span class="math inline">\(N(np,npq)\)</span> when both <span class="math inline">\(np, nq\)</span> are large.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fl">0.5</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="dv">30</span>,<span class="dv">100</span>,<span class="dv">300</span>,<span class="dv">1000</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="do">##x&lt;-seq(from=0, to=n, by=0.1)</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">sapply</span>(n,seq,<span class="at">from=</span><span class="dv">0</span>,<span class="at">by=</span><span class="dv">1</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>))</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>mu<span class="ot">&lt;-</span><span class="dv">0</span>;sd<span class="ot">&lt;-</span><span class="dv">0</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>){</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  mu<span class="ot">&lt;-</span>n[i]<span class="sc">*</span>p</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  sd<span class="ot">&lt;-</span><span class="fu">sqrt</span>(n[i]<span class="sc">*</span>p<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p))</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  norpdf<span class="ot">&lt;-</span><span class="fu">dnorm</span>(x[[i]],<span class="at">mean=</span>mu,sd)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  normax<span class="ot">&lt;-</span><span class="fu">max</span>(norpdf)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  binpdf<span class="ot">&lt;-</span><span class="fu">dbinom</span>(x[[i]],n[i],p)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(x[[i]],binpdf,<span class="at">type=</span><span class="st">"l"</span>, <span class="at">main=</span>n[i], <span class="at">xlab=</span><span class="st">'x'</span>, <span class="at">ylab=</span><span class="st">'density'</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,normax))</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lines</span>(x[[i]],norpdf, <span class="at">col=</span><span class="st">'red'</span>,<span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="cda_lab1_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If <span class="math inline">\(p\)</span> gets closer to 0 or 1, then we need larger <span class="math inline">\(n\)</span> to obtain nice approximation.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fl">0.01</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="dv">30</span>,<span class="dv">100</span>,<span class="dv">300</span>,<span class="dv">1000</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="do">##x&lt;-seq(from=0, to=n, by=0.1)</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">lapply</span>(n,seq,<span class="at">from=</span><span class="dv">0</span>,<span class="at">by=</span><span class="dv">1</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>))</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>mu<span class="ot">&lt;-</span><span class="dv">0</span>;sd<span class="ot">&lt;-</span><span class="dv">0</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>){</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  mu<span class="ot">&lt;-</span>n[i]<span class="sc">*</span>p</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  sd<span class="ot">&lt;-</span><span class="fu">sqrt</span>(n[i]<span class="sc">*</span>p<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p))</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  norpdf<span class="ot">&lt;-</span><span class="fu">dnorm</span>(x[[i]],mu,sd)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  normax<span class="ot">&lt;-</span><span class="fu">max</span>(norpdf)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  binpdf<span class="ot">&lt;-</span><span class="fu">dbinom</span>(x[[i]],n[i],p)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(x[[i]],binpdf,<span class="at">type=</span><span class="st">"l"</span>, <span class="at">main=</span>n[i], <span class="at">xlab=</span><span class="st">'x'</span>, <span class="at">ylab=</span><span class="st">'density'</span>,<span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fu">max</span>(<span class="dv">10</span>,<span class="dv">5</span><span class="sc">*</span>mu)),<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,normax))</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lines</span>(x[[i]],norpdf, <span class="at">col=</span><span class="st">'red'</span>)</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="cda_lab1_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="statistical-inference-for-a-proportion" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-inference-for-a-proportion">Statistical inference for a proportion</h3>
+<p><span class="math inline">\(Y\sim\mathrm{Bin}(n,\pi)\)</span>에서 최대우도추정량(MLE)은 <span class="math inline">\(\hat\pi=Y/n\)</span>이다. Wald 방법은 표본이 작거나 비율이 0 또는 1에 가까울 때 부정확할 수 있으며, 신뢰구간이 <span class="math inline">\([0,1]\)</span>을 벗어나기도 한다. <code>prop.test(..., correct = FALSE)</code>의 score 계열 추론은 이러한 상황에서 대체로 더 안정적이다.</p>
+<ul>
+<li><code>prop.test()</code> function
+<ul>
+<li>Testing the null that the proportions (prob. of success) are the same, or that they equal certain gives values.</li>
+<li><code>prop.test(x, n, p = NULL, alternative = c("two.sided", "less", "greater"), correct = TRUE)</code></li>
+</ul></li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Arguments</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>x</td>
+<td>(a vector of) counts of success</td>
+</tr>
+<tr class="even">
+<td>n</td>
+<td>counts of trials</td>
+</tr>
+<tr class="odd">
+<td>p</td>
+<td>prob. of success</td>
+</tr>
+<tr class="even">
+<td>conf.level</td>
+<td>confidence level of the returned confidence interval</td>
+</tr>
+<tr class="odd">
+<td>correct</td>
+<td>logical. Should Yates’ continuity correction be applied?</td>
+</tr>
+</tbody>
+</table>
+<section id="example-surveyed-opinions-about-legalized-abortion-n-1810-yes-837-no-973" class="level4">
+<h4 class="anchored" data-anchor-id="example-surveyed-opinions-about-legalized-abortion-n-1810-yes-837-no-973">[Example : Surveyed opinions about legalized abortion] (n = 1810, Yes = 837, No = 973)</h4>
+<div style="text-align:center">
+<p><span class="math inline">\(H_0 : \pi = 0.5\)</span> vs <span class="math inline">\(H_a : \pi \not= 0.5\)</span></p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="dv">837</span>, <span class="dv">1810</span>, <span class="at">p =</span> <span class="fl">0.5</span>, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    1-sample proportions test without continuity correction
+
+data:  837 out of 1810, null probability 0.5
+X-squared = 10.219, df = 1, p-value = 0.00139
+alternative hypothesis: true p is not equal to 0.5
+95 percent confidence interval:
+ 0.4395653 0.4854557
+sample estimates:
+        p 
+0.4624309 </code></pre>
+</div>
+</div>
+<div style="text-align:center">
+<p><span class="math inline">\(H_0 : \pi = 0.5\)</span> vs <span class="math inline">\(H_a : \pi &lt; 0.5\)</span></p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="dv">837</span>, <span class="dv">1810</span>, <span class="at">p =</span> <span class="fl">0.5</span>, <span class="at">alternative =</span> <span class="st">"less"</span>, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    1-sample proportions test without continuity correction
+
+data:  837 out of 1810, null probability 0.5
+X-squared = 10.219, df = 1, p-value = 0.0006951
+alternative hypothesis: true p is less than 0.5
+95 percent confidence interval:
+ 0.0000000 0.4817492
+sample estimates:
+        p 
+0.4624309 </code></pre>
+</div>
+</div>
+<ul>
+<li><code>read.table()</code> function
+<ul>
+<li>Easiest way to import data into R.</li>
+<li><code>read.table("file", header = FALSE, sep = "", ...)</code></li>
+</ul></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>option</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>header</td>
+<td>logical. Does the first row contain column names?</td>
+</tr>
+<tr class="even">
+<td>sep</td>
+<td>the field separator character, which can be "" : spaces, "\" : tab-delimited, "," : comma-separate</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>Clinical <span class="ot">&lt;-</span> <span class="fu">read.table</span>(</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://raw.githubusercontent.com/alanagresti/categorical-data/master/Clinical.dat"</span>,</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">header =</span> <span class="cn">TRUE</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>Clinical</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["subject"],"name":[1],"type":["int"],"align":["right"]},{"label":["response"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"1"},{"1":"2","2":"1"},{"1":"3","2":"1"},{"1":"4","2":"1"},{"1":"5","2":"1"},{"1":"6","2":"1"},{"1":"7","2":"1"},{"1":"8","2":"1"},{"1":"9","2":"1"},{"1":"10","2":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p>Calculating the score C.I. for prob. of success in the Clinical dataset</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">sum</span>(Clinical<span class="sc">$</span>response)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(y, <span class="fu">nrow</span>(Clinical), <span class="at">conf.level =</span> <span class="fl">0.95</span>, <span class="at">correct =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>conf.int</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.5958500 0.9821238
+attr(,"conf.level")
+[1] 0.95</code></pre>
+</div>
+</div>
+<ul>
+<li><code>binom.confint()</code> function
+<ul>
+<li>Uses nine different methods to obtain a C.I. on the binomial prob.</li>
+<li><code>binom.confint(x, n, conf.level = 0.95, methods = "all")</code></li>
+<li>methods : c(“exact”, “asymptotic”, “ac”, “wilson”, “prop.test”, “bayes”, “logit”, “cloglog”, “probit”, “profile”)</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(binom)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># binom.confint(9, 10, conf.level = 0.95, method = "prop.test") #Yates' continuity correction is applied.</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">binom.confint</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>, <span class="at">method =</span> <span class="st">"asymptotic"</span>) <span class="co"># Wald C.I.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["method"],"name":[1],"type":["chr"],"align":["left"]},{"label":["x"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["n"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["mean"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["lower"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["upper"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"asymptotic","2":"9","3":"10","4":"0.9","5":"0.7140615","6":"1.085939","_rn_":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">binom.confint</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>, <span class="at">method =</span> <span class="st">"wilson"</span>) <span class="co"># score C.I. The results coincides with prop.test</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["method"],"name":[1],"type":["chr"],"align":["left"]},{"label":["x"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["n"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["mean"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["lower"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["upper"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"wilson","2":"9","3":"10","4":"0.9","5":"0.59585","6":"0.9821238","_rn_":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">binom.confint</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>, <span class="at">method =</span> <span class="st">"agresti-coull"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["method"],"name":[1],"type":["chr"],"align":["left"]},{"label":["x"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["n"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["mean"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["lower"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["upper"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"agresti-coull","2":"9","3":"10","4":"0.9","5":"0.5740323","6":"1.003941","_rn_":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+<section id="mid-p-value" class="level4">
+<h4 class="anchored" data-anchor-id="mid-p-value">Mid P-value</h4>
+<p>이산형 확률분포의 정확검정(exact test)은 실제 제1종 오류확률이 미리 정한 유의수준 <span class="math inline">\(\alpha\)</span>보다 작아지는 보수성을 보일 수 있다. mid-<span class="math inline">\(P\)</span>는 관측 결과의 확률을 절반만 포함해 보수성을 줄이지만, 사용한 <span class="math inline">\(P\)</span>값의 정의를 결과에 명시해야 한다.</p>
+<p>Mid P-value can be obtained by <code>binom.exact()</code> function in <code>exactci</code> packages.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(exactci)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: ssanv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: testthat</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'exactci'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:binom':
+
+    binom.exact</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">binom.exact</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="fl">0.5</span>, <span class="at">alternative =</span> <span class="st">"greater"</span>, <span class="at">midp =</span> T)<span class="sc">$</span>p.value</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.005859375</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># w/o using the binom.exact function</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>(<span class="fu">choose</span>(<span class="dv">10</span>, <span class="dv">9</span>)<span class="sc">*</span>(<span class="fl">0.5</span>)<span class="sc">^</span><span class="dv">10</span>)<span class="sc">/</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">choose</span>(<span class="dv">10</span>, <span class="dv">10</span>)<span class="sc">*</span>(<span class="fl">0.5</span>)<span class="sc">^</span><span class="dv">10</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.005859375</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(PropCIs)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">midPci</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>) <span class="co"># C.I. based on test w/ mid P-value (Clopper-Pearson interval)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+
+
+data:  
+
+95 percent confidence interval:
+ 0.5966 0.9946</code></pre>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="contingency-table" class="level2">
+<h2 class="anchored" data-anchor-id="contingency-table">2. Contingency Table</h2>
+<section id="difference-of-proportions" class="level3">
+<h3 class="anchored" data-anchor-id="difference-of-proportions">Difference of Proportions</h3>
+<p>위험차 <span class="math inline">\(\pi_1-\pi_2\)</span>는 두 확률의 차이, 상대위험 <span class="math inline">\(\pi_1/\pi_2\)</span>는 확률의 배수, 오즈비는 오즈의 배수이다. 독립의 기준값은 각각 0, 1, 1이다. 사건이 드물면 오즈비와 상대위험이 비슷하며, 오즈비 신뢰구간은 <span class="math inline">\(\log(OR)\)</span> 척도에서 계산한 뒤 지수변환한다.</p>
+<ul>
+<li><p>For two <em>independent</em> binomial samples with sample sized <span class="math inline">\(n_1\)</span> and <span class="math inline">\(n_2\)</span>.</p></li>
+<li><p>The estimated standard error of <span class="math inline">\(\hat{\pi}_1-\hat{\pi}_2\)</span> is</p>
+<div style="text-align:center">
+<p><span class="math inline">\(\displaystyle SE = \sqrt{\frac{\hat{\pi}_1(1-\hat{\pi}_1)}{n_1} + \frac{\hat{\pi}_2(1-\hat{\pi}_2)}{n_2}}\)</span></p>
+</div></li>
+<li><p><span class="math inline">\(100(1-\alpha)\%\)</span> Wald C.I. for <span class="math inline">\(\pi_1 - \pi_2\)</span> is</p>
+<div style="text-align:center">
+<p><span class="math inline">\(\displaystyle (\hat{\pi}_1-\hat{\pi}_2) \pm Z_{\alpha/2}SE\)</span></p>
+</div></li>
+<li><p>Risk Difference : <span class="math inline">\(Difference\;of\;Proportions=\pi_1-\pi_2\)</span></p></li>
+<li><p>Relative risk (RR) : <span class="math inline">\(\displaystyle RR = \frac{\pi_1}{\pi_2}\)</span></p></li>
+<li><p>Odds : <span class="math inline">\(\displaystyle \frac{\pi}{1-\pi}\)</span></p></li>
+<li><p>Odds Ratio (OR) : <span class="math inline">\(\displaystyle OR = \frac{\pi_1/(1-\pi_1)}{\pi_2/(1-\pi_2)}\)</span></p></li>
+<li><p>The asymptotic standard error for the log odds ratio (OR) :</p>
+<div style="text-align:center">
+<p><span class="math inline">\(\displaystyle SE_{OR} = \sqrt{\frac{1}{n_{11}} + \frac{1}{n_{12}} + \frac{1}{n_{21}}+ \frac{1}{n_{22}}}\)</span></p>
+</div></li>
+<li><p>Wald <span class="math inline">\(100(1-\alpha)\%\)</span> C.I. for <span class="math inline">\(\log(OR)\)</span> :</p>
+<div style="text-align:center">
+<p><span class="math inline">\(\log(OR) \pm z_{\alpha/2}SE_{OR}\)</span></p>
+</div>
+<p><br></p></li>
+</ul>
+<section id="example-aspirin-use-and-myocardial-infarction" class="level4">
+<h4 class="anchored" data-anchor-id="example-aspirin-use-and-myocardial-infarction">[Example : Aspirin Use and Myocardial Infarction]</h4>
+<p>이 예제에서는 두 집단의 심근경색 비율이 모두 약 1%이므로 상대위험과 오즈비가 거의 같다. 행의 순서를 바꾸면 추정값과 신뢰구간은 역수가 되지만 결론은 변하지 않는다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Myocardial Infarction (MI)</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Group</td>
+<td>Yes</td>
+<td>No</td>
+<td>Total</td>
+</tr>
+<tr class="even">
+<td>Placebo</td>
+<td>189</td>
+<td>10,845</td>
+<td>11,034</td>
+</tr>
+<tr class="odd">
+<td>Aspirin</td>
+<td>104</td>
+<td>10,933</td>
+<td>11,037</td>
+</tr>
+<tr class="even">
+<td>Total</td>
+<td>293</td>
+<td>21,778</td>
+<td>22,071</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>pi<span class="fl">.1</span> <span class="ot">=</span> <span class="dv">189</span><span class="sc">/</span><span class="dv">11034</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>pi<span class="fl">.2</span> <span class="ot">=</span> <span class="dv">104</span><span class="sc">/</span><span class="dv">11037</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>pi<span class="fl">.1</span><span class="sc">-</span>pi<span class="fl">.2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.007706024</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>se <span class="ot">=</span> <span class="fu">sqrt</span>(pi<span class="fl">.1</span><span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>pi<span class="fl">.1</span>)<span class="sc">/</span><span class="dv">11034</span> <span class="sc">+</span> pi<span class="fl">.2</span><span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>pi<span class="fl">.2</span>)<span class="sc">/</span><span class="dv">11037</span>)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>pi<span class="fl">.1</span><span class="sc">-</span>pi<span class="fl">.2</span> <span class="sc">-</span> <span class="fl">1.96</span><span class="sc">*</span>se; pi<span class="fl">.1</span><span class="sc">-</span>pi<span class="fl">.2</span> <span class="sc">+</span> <span class="fl">1.96</span><span class="sc">*</span>se;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.004687695</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.01072435</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="fu">c</span>(<span class="dv">189</span>, <span class="dv">104</span>), <span class="fu">c</span>(<span class="dv">11034</span>, <span class="dv">11037</span>), <span class="at">conf.level =</span> <span class="fl">0.95</span>, <span class="at">correct =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    2-sample test for equality of proportions without continuity correction
+
+data:  c(189, 104) out of c(11034, 11037)
+X-squared = 25.014, df = 1, p-value = 5.692e-07
+alternative hypothesis: two.sided
+95 percent confidence interval:
+ 0.004687751 0.010724297
+sample estimates:
+    prop 1     prop 2 
+0.01712887 0.00942285 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(PropCIs)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">diffscoreci</span>(<span class="dv">189</span>, <span class="dv">11034</span>, <span class="dv">104</span>, <span class="dv">11037</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>) <span class="co"># Score C.I. for Difference of proportions</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+
+
+data:  
+
+95 percent confidence interval:
+ 0.004716821 0.010788501</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">orscoreci</span>(<span class="dv">189</span>, <span class="dv">11034</span>, <span class="dv">104</span>, <span class="dv">11037</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>) <span class="co"># Score C.I. for OR</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+
+
+data:  
+
+95 percent confidence interval:
+ 1.440802 2.329551</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

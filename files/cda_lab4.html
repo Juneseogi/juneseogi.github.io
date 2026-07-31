@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Junseok Lee">
+<meta name="dcterms.date" content="2026-09-19">
+
+<title>quarto-input8104a5351aa051e4</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="cda_lab4_files/libs/clipboard/clipboard.min.js"></script>
+<script src="cda_lab4_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="cda_lab4_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="cda_lab4_files/libs/quarto-html/popper.min.js"></script>
+<script src="cda_lab4_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="cda_lab4_files/libs/quarto-html/anchor.min.js"></script>
+<link href="cda_lab4_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="cda_lab4_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="cda_lab4_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="cda_lab4_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="cda_lab4_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="cda_lab4_files/libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
+<script src="cda_lab4_files/libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#ch.-5" id="toc-ch.-5" class="nav-link active" data-scroll-target="#ch.-5">&lt;Ch. 5&gt;</a>
+  <ul>
+  <li><a href="#strategies-in-model-selecton" id="toc-strategies-in-model-selecton" class="nav-link" data-scroll-target="#strategies-in-model-selecton">Strategies in model selecton</a>
+  <ul>
+  <li><a href="#example-horseshoe-crabs" id="toc-example-horseshoe-crabs" class="nav-link" data-scroll-target="#example-horseshoe-crabs">[Example : Horseshoe Crabs]</a></li>
+  <li><a href="#stepwise-variable-selection-algorithms-aic-and-biasvariance-tradeoff" id="toc-stepwise-variable-selection-algorithms-aic-and-biasvariance-tradeoff" class="nav-link" data-scroll-target="#stepwise-variable-selection-algorithms-aic-and-biasvariance-tradeoff">Stepwise Variable Selection Algorithms/ AIC and Bias&amp;Variance tradeoff</a></li>
+  </ul></li>
+  <li><a href="#model-checking-goodness-of-fit" id="toc-model-checking-goodness-of-fit" class="nav-link" data-scroll-target="#model-checking-goodness-of-fit">Model Checking : Goodness of fit</a>
+  <ul>
+  <li><a href="#goodness-of-fit-for-marijuana-use-survey" id="toc-goodness-of-fit-for-marijuana-use-survey" class="nav-link" data-scroll-target="#goodness-of-fit-for-marijuana-use-survey">Goodness of fit for Marijuana use survey</a></li>
+  </ul></li>
+  <li><a href="#infinite-estimates-in-logistic-regression" id="toc-infinite-estimates-in-logistic-regression" class="nav-link" data-scroll-target="#infinite-estimates-in-logistic-regression">Infinite estimates in logistic regression</a>
+  <ul>
+  <li><a href="#complete-and-quasi-complete-separation-perfect-discrimination" id="toc-complete-and-quasi-complete-separation-perfect-discrimination" class="nav-link" data-scroll-target="#complete-and-quasi-complete-separation-perfect-discrimination">Complete and quasi-complete separation (Perfect discrimination)</a></li>
+  <li><a href="#example-toys-example-with-infinite-estimated-effect" id="toc-example-toys-example-with-infinite-estimated-effect" class="nav-link" data-scroll-target="#example-toys-example-with-infinite-estimated-effect">[Example : Toys example with infinite estimated effect]</a></li>
+  <li><a href="#sparse-data-and-infinite-effect-with-categorical-predictors" id="toc-sparse-data-and-infinite-effect-with-categorical-predictors" class="nav-link" data-scroll-target="#sparse-data-and-infinite-effect-with-categorical-predictors">Sparse data and infinite effect with categorical predictors</a></li>
+  <li><a href="#example-risk-factors-for-endometrial-cancer-grade" id="toc-example-risk-factors-for-endometrial-cancer-grade" class="nav-link" data-scroll-target="#example-risk-factors-for-endometrial-cancer-grade">[Example : Risk factors for endometrial cancer grade]</a></li>
+  </ul></li>
+  <li><a href="#alternative-link-functions" id="toc-alternative-link-functions" class="nav-link" data-scroll-target="#alternative-link-functions">Alternative link functions</a>
+  <ul>
+  <li><a href="#linear-probability-model" id="toc-linear-probability-model" class="nav-link" data-scroll-target="#linear-probability-model">(1) Linear probability model</a></li>
+  <li><a href="#probit-model" id="toc-probit-model" class="nav-link" data-scroll-target="#probit-model">(2) Probit model</a></li>
+  <li><a href="#example-snoring-and-heart-disease" id="toc-example-snoring-and-heart-disease" class="nav-link" data-scroll-target="#example-snoring-and-heart-disease">[Example : Snoring and heart disease]</a></li>
+  </ul></li>
+  <li><a href="#resampling-methods" id="toc-resampling-methods" class="nav-link" data-scroll-target="#resampling-methods">Resampling methods</a>
+  <ul>
+  <li><a href="#bootstrap" id="toc-bootstrap" class="nav-link" data-scroll-target="#bootstrap">Bootstrap</a></li>
+  <li><a href="#cross-validation" id="toc-cross-validation" class="nav-link" data-scroll-target="#cross-validation">Cross Validation</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><p>Lab 4.</p>
+<p>Ch.5 Building and applying Logistic Regression Models</p></h1>
+<p class="subtitle lead">Discrete Data Analysis and Lab. (326.314)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Junseok Lee </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 19, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ch.-5" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-5">&lt;Ch. 5&gt;</h2>
+<section id="strategies-in-model-selecton" class="level3">
+<h3 class="anchored" data-anchor-id="strategies-in-model-selecton">Strategies in model selecton</h3>
+<p>모형 선택에서는 적합도와 해석 가능한 단순성의 균형이 필요하다. 연구가설상 필요한 변수는 자동선택 결과와 무관하게 포함하고, 상호작용을 넣을 때는 관련 주효과도 유지한다. 강하게 상관된 설명변수의 중요도를 개별 <span class="math inline">\(P\)</span>값만으로 판단해서는 안 된다.</p>
+<section id="example-horseshoe-crabs" class="level4">
+<h4 class="anchored" data-anchor-id="example-horseshoe-crabs">[Example : Horseshoe Crabs]</h4>
+<ul>
+<li>Response outcome : whether a female crab has any other satellites(1=yes, 0=no).</li>
+<li>Explanatory variables : female crab’s color(4 categories), spine condition(3 categories), weight, and shell width.</li>
+</ul>
+Model :
+<div style="text-align:center">
+<p><span class="math inline">\(\displaystyle logit(P(Y=1)) = \alpha + \beta_1 weight + \beta_2 width + \beta_3 c_2 + \beta_4 c_3 + \beta_5 c_4 + \beta_6 s_2 + \beta_7 s_3\)</span></p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Crabs <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/alanagresti/categorical-data/master/Crabs.dat"</span>, <span class="at">header =</span> T)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(Crabs)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["crab"],"name":[1],"type":["int"],"align":["right"]},{"label":["sat"],"name":[2],"type":["int"],"align":["right"]},{"label":["y"],"name":[3],"type":["int"],"align":["right"]},{"label":["weight"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["width"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["color"],"name":[6],"type":["int"],"align":["right"]},{"label":["spine"],"name":[7],"type":["int"],"align":["right"]}],"data":[{"1":"168","2":"2","3":"1","4":"2.175","5":"26.2","6":"3","7":"3","_rn_":"168"},{"1":"169","2":"3","3":"1","4":"2.750","5":"26.1","6":"3","7":"3","_rn_":"169"},{"1":"170","2":"4","3":"1","4":"3.275","5":"29.0","6":"3","7":"3","_rn_":"170"},{"1":"171","2":"0","3":"0","4":"2.625","5":"28.0","6":"1","7":"1","_rn_":"171"},{"1":"172","2":"0","3":"0","4":"2.625","5":"27.0","6":"4","7":"3","_rn_":"172"},{"1":"173","2":"0","3":"0","4":"2.000","5":"24.5","6":"2","7":"2","_rn_":"173"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> weight <span class="sc">+</span> width <span class="sc">+</span> <span class="fu">factor</span>(color) <span class="sc">+</span> <span class="fu">factor</span>(spine), <span class="at">family =</span> binomial, <span class="at">data =</span> Crabs)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = y ~ weight + width + factor(color) + factor(spine), 
+    family = binomial, data = Crabs)
+
+Coefficients:
+               Estimate Std. Error z value Pr(&gt;|z|)  
+(Intercept)    -8.06501    3.92855  -2.053   0.0401 *
+weight          0.82578    0.70383   1.173   0.2407  
+width           0.26313    0.19530   1.347   0.1779  
+factor(color)2 -0.10290    0.78259  -0.131   0.8954  
+factor(color)3 -0.48886    0.85312  -0.573   0.5666  
+factor(color)4 -1.60867    0.93553  -1.720   0.0855 .
+factor(spine)2 -0.09598    0.70337  -0.136   0.8915  
+factor(spine)3  0.40029    0.50270   0.796   0.4259  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 225.76  on 172  degrees of freedom
+Residual deviance: 185.20  on 165  degrees of freedom
+AIC: 201.2
+
+Number of Fisher Scoring iterations: 4</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: carData</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(fit) <span class="co">#LR tests for individual explanatory variables</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["LR Chisq"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Df"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Pr(>Chisq)"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1.409898","2":"1","3":"0.2350733","_rn_":"weight"},{"1":"1.796768","2":"1","3":"0.1801037","_rn_":"width"},{"1":"7.595758","2":"3","3":"0.0551484","_rn_":"factor(color)"},{"1":"1.009121","2":"2","3":"0.6037709","_rn_":"factor(spine)"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Df"],"name":[1],"type":["int"],"align":["right"]},{"label":["Deviance"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Resid. Df"],"name":[3],"type":["int"],"align":["right"]},{"label":["Resid. Dev"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Pr(>Chi)"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"NA","2":"NA","3":"172","4":"225.7585","5":"NA","_rn_":"NULL"},{"1":"1","2":"30.021373","3":"171","4":"195.7371","5":"4.273103e-08","_rn_":"weight"},{"1":"1","2":"2.845263","3":"170","4":"192.8919","5":"9.164361e-02","_rn_":"width"},{"1":"3","2":"6.680766","3":"167","4":"186.2111","5":"8.279976e-02","_rn_":"factor(color)"},{"1":"2","2":"1.009121","3":"165","4":"185.2020","5":"6.037709e-01","_rn_":"factor(spine)"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+LR test for <span class="math inline">\(H_0 : \beta_1 = \cdots = \beta_7 = 0\)</span> is
+<div style="text-align:center">
+<p><span class="math inline">\(2(L_1 - L_0) = 40.56 \sim \chi^2_7\)</span></p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">-</span><span class="fu">pchisq</span>(<span class="fl">40.56</span>,<span class="dv">7</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 9.832923e-07</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(Crabs<span class="sc">$</span>weight, Crabs<span class="sc">$</span>width)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8868715</code></pre>
+</div>
+</div>
+<p>Since the corresponding p-value is <span class="math inline">\(&lt; 0.0001\)</span>, there is very strong evidence against the null hypothesis.</p>
+<p><br></p>
+</section>
+<section id="stepwise-variable-selection-algorithms-aic-and-biasvariance-tradeoff" class="level4">
+<h4 class="anchored" data-anchor-id="stepwise-variable-selection-algorithms-aic-and-biasvariance-tradeoff">Stepwise Variable Selection Algorithms/ AIC and Bias&amp;Variance tradeoff</h4>
+<p>AIC는 <span class="math inline">\(-2\ell+2k\)</span>로 적합도와 모수 수를 함께 고려하며, 값이 작은 모형을 선호한다. AIC 차이는 유의성 검정이 아니며 단계적 선택은 표본 변화에 민감하다. 선택 결과는 이론적 타당성과 모형의 안정성을 함께 고려해 해석한다.</p>
+<ul>
+<li>Forward Selection: add terms sequentially until further additions do not improve the fit.</li>
+<li>Backward elimination: start with a complex model and sequentially remove terms.</li>
+<li>A <span class="math inline">\(purposeful\)</span> <span class="math inline">\(selection\)</span> process proposed by Hosmer et al.&nbsp;(2013)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#According to Table 5.1, C+W model is selected.</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> width <span class="sc">+</span> <span class="fu">factor</span>(color), <span class="at">family =</span> binomial, <span class="at">data =</span> Crabs)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="dv">2</span><span class="sc">*</span><span class="fu">logLik</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'log Lik.' 187.457 (df=5)</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AIC</span>(fit) <span class="co"># adds 2(# of parameters) = 2(5) = 10 to -2*logLik(fit)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 197.457</code></pre>
+</div>
+</div>
+<ul>
+<li>Here, AIC can also be the basis of stepwise variable selection.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> weight <span class="sc">+</span> width <span class="sc">+</span> <span class="fu">factor</span>(color) <span class="sc">+</span> <span class="fu">factor</span>(spine), <span class="at">family =</span> binomial, <span class="at">data =</span> Crabs)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MASS)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">stepAIC</span>(fit) <span class="co">#default direction is backward.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Start:  AIC=201.2
+y ~ weight + width + factor(color) + factor(spine)
+
+                Df Deviance    AIC
+- factor(spine)  2   186.21 198.21
+- weight         1   186.61 200.61
+- width          1   187.00 201.00
+&lt;none&gt;               185.20 201.20
+- factor(color)  3   192.80 202.80
+
+Step:  AIC=198.21
+y ~ weight + width + factor(color)
+
+                Df Deviance    AIC
+- weight         1   187.46 197.46
+&lt;none&gt;               186.21 198.21
+- width          1   188.54 198.54
+- factor(color)  3   192.89 198.89
+
+Step:  AIC=197.46
+y ~ width + factor(color)
+
+                Df Deviance    AIC
+&lt;none&gt;               187.46 197.46
+- factor(color)  3   194.45 198.45
+- width          1   212.06 220.06</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:  glm(formula = y ~ width + factor(color), family = binomial, data = Crabs)
+
+Coefficients:
+   (Intercept)           width  factor(color)2  factor(color)3  factor(color)4  
+     -11.38519         0.46796         0.07242        -0.22380        -1.32992  
+
+Degrees of Freedom: 172 Total (i.e. Null);  168 Residual
+Null Deviance:      225.8 
+Residual Deviance: 187.5    AIC: 197.5</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>fit2<span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> <span class="dv">1</span>, <span class="at">family=</span>binomial, <span class="at">data=</span>Crabs)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stepAIC</span>(fit2,<span class="at">direction=</span><span class="st">"forward"</span>,<span class="at">scope=</span> y<span class="sc">~</span>weight<span class="sc">+</span>width<span class="sc">+</span><span class="fu">factor</span>(color))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Start:  AIC=227.76
+y ~ 1
+
+                Df Deviance    AIC
++ width          1   194.45 198.45
++ weight         1   195.74 199.74
++ factor(color)  3   212.06 220.06
+&lt;none&gt;               225.76 227.76
+
+Step:  AIC=198.45
+y ~ width
+
+                Df Deviance    AIC
++ factor(color)  3   187.46 197.46
+&lt;none&gt;               194.45 198.45
++ weight         1   192.89 198.89
+
+Step:  AIC=197.46
+y ~ width + factor(color)
+
+         Df Deviance    AIC
+&lt;none&gt;        187.46 197.46
++ weight  1   186.21 198.21</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:  glm(formula = y ~ width + factor(color), family = binomial, data = Crabs)
+
+Coefficients:
+   (Intercept)           width  factor(color)2  factor(color)3  factor(color)4  
+     -11.38519         0.46796         0.07242        -0.22380        -1.32992  
+
+Degrees of Freedom: 172 Total (i.e. Null);  168 Residual
+Null Deviance:      225.8 
+Residual Deviance: 187.5    AIC: 197.5</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#stepAIC(fit2,direction="forward",scope= list(upper=~weight+width+factor(color)+factor(spine),lower=~1),trace=FALSE)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Alternatively, we can use best subset selection using leaps algorithm: package.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Crabs)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>Crabs2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(weight, width, color, spine, y)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaps)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bestglm)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bestglm</span>(Crabs2, <span class="at">family =</span> binomial, <span class="at">IC =</span> <span class="st">"AIC"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Morgan-Tatar search since family is non-gaussian.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>AIC
+BICq equivalent for q in (0.477740316103793, 0.876695783647898)
+Best Model:
+               Estimate Std. Error   z value     Pr(&gt;|z|)
+(Intercept) -10.0708390  2.8068339 -3.587971 3.332611e-04
+width         0.4583097  0.1040181  4.406056 1.052696e-05
+color        -0.5090467  0.2236817 -2.275763 2.286018e-02</code></pre>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="model-checking-goodness-of-fit" class="level3">
+<h3 class="anchored" data-anchor-id="model-checking-goodness-of-fit">Model Checking : Goodness of fit</h3>
+<p>잔차 deviance는 적합모형과 포화모형의 차이를 나타낸다. grouped binomial 자료에서는 전역 적합도 검정이 유용할 수 있다. 연속형 설명변수가 있는 ungrouped 0/1 자료에서는 단순한 deviance 카이제곱 근사가 부적절할 수 있으므로 잔차와 영향점을 함께 확인한다.</p>
+<section id="goodness-of-fit-for-marijuana-use-survey" class="level4">
+<h4 class="anchored" data-anchor-id="goodness-of-fit-for-marijuana-use-survey">Goodness of fit for Marijuana use survey</h4>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>Marijuana <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/alanagresti/categorical-data/master/Marijuana.dat"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(yes<span class="sc">/</span>(yes <span class="sc">+</span> no) <span class="sc">~</span> gender <span class="sc">+</span> race, <span class="at">weights =</span> yes <span class="sc">+</span> no, <span class="at">family =</span> binomial, <span class="at">data =</span> Marijuana)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>fit<span class="sc">$</span>deviance <span class="co"># residual deviance goodness-of-fit statitsic</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.05798151</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>fit<span class="sc">$</span>df.residual <span class="co"># residual df</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">-</span><span class="fu">pchisq</span>(fit<span class="sc">$</span>deviance, fit<span class="sc">$</span>df.residual) <span class="co"># p-value for deviance goodness-of-fit test</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8097152</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fitted</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        1         2         3         4 
+0.4045330 0.4541297 0.3035713 0.3480244 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> Marijuana<span class="sc">$</span>yes <span class="sc">+</span> Marijuana<span class="sc">$</span>no</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>fit.yes <span class="ot">&lt;-</span> n<span class="sc">*</span><span class="fu">fitted</span>(fit); fit.no <span class="ot">&lt;-</span> n<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">fitted</span>(fit))</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Marijuana)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(race, gender, yes, fit.yes, no, fit.no)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["race"],"name":[1],"type":["chr"],"align":["left"]},{"label":["gender"],"name":[2],"type":["chr"],"align":["left"]},{"label":["yes"],"name":[3],"type":["int"],"align":["right"]},{"label":["fit.yes"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["no"],"name":[5],"type":["int"],"align":["right"]},{"label":["fit.no"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"white","2":"female","3":"420","4":"420.71429","5":"620","6":"619.28571","_rn_":"1"},{"1":"white","2":"male","3":"483","4":"482.28571","5":"579","6":"579.71429","_rn_":"2"},{"1":"other","2":"female","3":"25","4":"24.28571","5":"55","6":"55.71429","_rn_":"3"},{"1":"other","2":"male","3":"32","4":"32.71429","5":"62","6":"61.28571","_rn_":"4"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="infinite-estimates-in-logistic-regression" class="level3">
+<h3 class="anchored" data-anchor-id="infinite-estimates-in-logistic-regression">Infinite estimates in logistic regression</h3>
+<p>완전분리나 준완전분리가 있으면 유한한 최대우도추정치가 존재하지 않는다. 소프트웨어가 큰 계수와 표준오차를 출력해도 Wald 검정은 신뢰하기 어렵다. 분리 여부를 진단하고 profile likelihood나 정확 방법을 고려한다.</p>
+<section id="complete-and-quasi-complete-separation-perfect-discrimination" class="level4">
+<h4 class="anchored" data-anchor-id="complete-and-quasi-complete-separation-perfect-discrimination">Complete and quasi-complete separation (Perfect discrimination)</h4>
+<ul>
+<li>Complete separation : observations are completely separated at the point of separation.</li>
+<li>Quasi-complete separation : observations of both type occur at the point of separation in the <span class="math inline">\(x\)</span> values.</li>
+</ul>
+</section>
+<section id="example-toys-example-with-infinite-estimated-effect" class="level4">
+<h4 class="anchored" data-anchor-id="example-toys-example-with-infinite-estimated-effect">[Example : Toys example with infinite estimated effect]</h4>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">60</span>, <span class="dv">70</span>, <span class="dv">80</span>, <span class="dv">90</span>)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x, <span class="at">family =</span> binomial)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = y ~ x, family = binomial)
+
+Coefficients:
+              Estimate Std. Error z value Pr(&gt;|z|)
+(Intercept)   -118.158 296046.187       0        1
+x                2.363   5805.939       0        1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1.1090e+01  on 7  degrees of freedom
+Residual deviance: 2.1827e-10  on 6  degrees of freedom
+AIC: 4
+
+Number of Fisher Scoring iterations: 25</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">logLik</span>(fit) <span class="co"># maximized log-likelihood = 0, so maximized likelihood = 1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'log Lik.' -1.09134e-10 (df=2)</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["LR Chisq"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Df"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Pr(>Chisq)"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"11.09035","2":"1","3":"0.0008677788","_rn_":"x"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(profileModel)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">confintModel</span>(fit, <span class="at">objective =</span> <span class="st">"ordinaryDeviance"</span>, <span class="at">method =</span> <span class="st">"zoom"</span>, <span class="at">endpoint.tolerance =</span> <span class="fl">1e-08</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Preliminary iteration .. Done
+
+Profiling for parameter (Intercept) ... Done
+Profiling for parameter x ... Done
+Zooming for parameter (Intercept) ...
+Zooming for parameter x ...</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                 Lower     Upper
+(Intercept)       -Inf -2.671072
+x           0.05876054       Inf
+attr(,"fitted object")
+fit</code></pre>
+</div>
+</div>
+<p>Despite <span class="math inline">\(\hat{\beta} = \infty\)</span>, but R-results reported that <span class="math inline">\(\hat{\beta} = 2.36,\, SE = 5805.94\)</span>. Since <span class="math inline">\(SE\)</span> value are too large, the wald statistic <span class="math inline">\(z = \hat{\beta}/SE\)</span> is useless. (<span class="math inline">\(z = 0,\, p-value = 1\)</span>)</p>
+<p><br></p>
+</section>
+<section id="sparse-data-and-infinite-effect-with-categorical-predictors" class="level4">
+<h4 class="anchored" data-anchor-id="sparse-data-and-infinite-effect-with-categorical-predictors">Sparse data and infinite effect with categorical predictors</h4>
+<p>희소 분할표의 0 셀은 대개 표본에서 우연히 관측되지 않은 sampling zero이다. 모형 적합 전후에 교차표, 수렴경고, 큰 계수와 표준오차를 확인해야 한다.</p>
+</section>
+<section id="example-risk-factors-for-endometrial-cancer-grade" class="level4">
+<h4 class="anchored" data-anchor-id="example-risk-factors-for-endometrial-cancer-grade">[Example : Risk factors for endometrial cancer grade]</h4>
+<ul>
+<li>Response variable : histology grade (HG, 0 = low, 1 = high)</li>
+<li>Explanatory variables :
+<ul>
+<li><span class="math inline">\(x_1\)</span> = neovasculation (NV, 1 = present, 0 = absent)</li>
+<li><span class="math inline">\(x_2\)</span> = pulsatility index of arteria uterina (PI, 0 to 49)</li>
+<li><span class="math inline">\(x_3\)</span> = endometrium height (EH, 0.27 to 3.61)</li>
+</ul></li>
+</ul>
+Consider the main effect model,
+<div style="text-align:center">
+<p><span class="math inline">\(logit(P(Y=1)) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3\)</span></p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>Endo <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/alanagresti/categorical-data/master/Endometrial.dat"</span>, <span class="at">header =</span> T)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>Endo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["NV"],"name":[1],"type":["int"],"align":["right"]},{"label":["PI"],"name":[2],"type":["int"],"align":["right"]},{"label":["EH"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["HG"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"0","2":"13","3":"1.64","4":"0"},{"1":"0","2":"16","3":"2.26","4":"0"},{"1":"0","2":"8","3":"3.14","4":"0"},{"1":"0","2":"34","3":"2.68","4":"0"},{"1":"0","2":"20","3":"1.28","4":"0"},{"1":"0","2":"5","3":"2.31","4":"0"},{"1":"0","2":"17","3":"1.80","4":"0"},{"1":"0","2":"10","3":"1.68","4":"0"},{"1":"0","2":"26","3":"1.56","4":"0"},{"1":"0","2":"17","3":"2.31","4":"0"},{"1":"0","2":"8","3":"2.01","4":"0"},{"1":"0","2":"7","3":"1.89","4":"0"},{"1":"0","2":"20","3":"3.15","4":"0"},{"1":"0","2":"10","3":"1.23","4":"0"},{"1":"0","2":"18","3":"1.27","4":"0"},{"1":"0","2":"16","3":"1.76","4":"0"},{"1":"0","2":"18","3":"2.00","4":"0"},{"1":"0","2":"8","3":"2.64","4":"1"},{"1":"0","2":"29","3":"0.88","4":"1"},{"1":"0","2":"12","3":"1.27","4":"1"},{"1":"0","2":"20","3":"1.37","4":"1"},{"1":"1","2":"38","3":"0.97","4":"1"},{"1":"1","2":"22","3":"1.14","4":"1"},{"1":"1","2":"7","3":"0.88","4":"1"},{"1":"1","2":"25","3":"0.91","4":"1"},{"1":"1","2":"15","3":"0.58","4":"1"},{"1":"0","2":"7","3":"0.97","4":"1"},{"1":"0","2":"28","3":"1.50","4":"0"},{"1":"0","2":"11","3":"1.33","4":"0"},{"1":"0","2":"19","3":"2.37","4":"0"},{"1":"0","2":"10","3":"1.82","4":"0"},{"1":"0","2":"10","3":"3.13","4":"0"},{"1":"0","2":"18","3":"1.31","4":"0"},{"1":"0","2":"14","3":"1.92","4":"0"},{"1":"0","2":"21","3":"1.64","4":"0"},{"1":"0","2":"11","3":"2.01","4":"0"},{"1":"0","2":"17","3":"1.88","4":"0"},{"1":"0","2":"25","3":"1.93","4":"0"},{"1":"0","2":"16","3":"2.11","4":"0"},{"1":"0","2":"19","3":"1.29","4":"0"},{"1":"0","2":"15","3":"1.72","4":"0"},{"1":"0","2":"33","3":"0.75","4":"0"},{"1":"0","2":"24","3":"1.92","4":"0"},{"1":"0","2":"48","3":"1.84","4":"1"},{"1":"0","2":"12","3":"1.11","4":"1"},{"1":"0","2":"19","3":"1.61","4":"1"},{"1":"0","2":"2","3":"1.18","4":"1"},{"1":"1","2":"22","3":"1.44","4":"1"},{"1":"1","2":"40","3":"1.18","4":"1"},{"1":"1","2":"5","3":"0.93","4":"1"},{"1":"1","2":"0","3":"1.17","4":"1"},{"1":"0","2":"21","3":"1.19","4":"1"},{"1":"0","2":"15","3":"1.06","4":"1"},{"1":"0","2":"29","3":"2.02","4":"0"},{"1":"0","2":"15","3":"2.29","4":"0"},{"1":"0","2":"12","3":"2.33","4":"0"},{"1":"0","2":"3","3":"2.90","4":"0"},{"1":"0","2":"20","3":"1.70","4":"0"},{"1":"0","2":"23","3":"1.41","4":"0"},{"1":"0","2":"12","3":"2.25","4":"0"},{"1":"0","2":"22","3":"1.54","4":"0"},{"1":"0","2":"42","3":"1.97","4":"0"},{"1":"0","2":"15","3":"1.75","4":"0"},{"1":"0","2":"13","3":"2.16","4":"0"},{"1":"0","2":"14","3":"2.57","4":"0"},{"1":"0","2":"19","3":"1.37","4":"0"},{"1":"0","2":"12","3":"3.61","4":"0"},{"1":"0","2":"13","3":"2.04","4":"0"},{"1":"0","2":"10","3":"2.17","4":"0"},{"1":"0","2":"12","3":"1.69","4":"1"},{"1":"1","2":"49","3":"0.27","4":"1"},{"1":"0","2":"6","3":"1.84","4":"1"},{"1":"0","2":"5","3":"1.30","4":"1"},{"1":"0","2":"17","3":"0.96","4":"1"},{"1":"1","2":"11","3":"1.01","4":"1"},{"1":"1","2":"21","3":"0.98","4":"1"},{"1":"0","2":"5","3":"0.35","4":"1"},{"1":"1","2":"19","3":"1.02","4":"1"},{"1":"0","2":"33","3":"0.85","4":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="sc">~</span> NV <span class="sc">+</span> HG, <span class="at">data =</span> Endo) <span class="co"># quasi-complete separation</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   HG
+NV   0  1
+  0 49 17
+  1  0 13</code></pre>
+</div>
+</div>
+<p>For all 13 patients having <span class="math inline">\(x_1 = 1\)</span>, the outcome is <span class="math inline">\(y = 1\)</span>. Therefore, the data exhibit quasi-complete separation. Then, <span class="math inline">\(\hat{\beta}_1 = \infty\)</span>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(HG <span class="sc">~</span> NV <span class="sc">+</span> PI <span class="sc">+</span> EH, <span class="at">family =</span> binomial, <span class="at">data =</span> Endo)</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = HG ~ NV + PI + EH, family = binomial, data = Endo)
+
+Coefficients:
+              Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)    4.30452    1.63730   2.629 0.008563 ** 
+NV            18.18556 1715.75089   0.011 0.991543    
+PI            -0.04218    0.04433  -0.952 0.341333    
+EH            -2.90261    0.84555  -3.433 0.000597 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 104.903  on 78  degrees of freedom
+Residual deviance:  55.393  on 75  degrees of freedom
+AIC: 63.393
+
+Number of Fisher Scoring iterations: 17</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">logLik</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'log Lik.' -27.69663 (df=4)</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(fit) <span class="co"># likelihood-ratio tests</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["LR Chisq"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Df"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Pr(>Chisq)"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"9.3576428","2":"1","3":"2.220576e-03","_rn_":"NV"},{"1":"0.9851344","2":"1","3":"3.209345e-01","_rn_":"PI"},{"1":"19.7606339","2":"1","3":"8.777197e-06","_rn_":"EH"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">confintModel</span>(fit, <span class="at">objective =</span> <span class="st">"ordinaryDeviance"</span>, <span class="at">method =</span> <span class="st">"zoom"</span>, <span class="at">endpoint.tolerance =</span> <span class="fl">1e-08</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Preliminary iteration .... Done
+
+Profiling for parameter (Intercept) ... Done
+Profiling for parameter NV ... Done
+Profiling for parameter PI ... Done
+Profiling for parameter EH ... Done
+Zooming for parameter (Intercept) ...
+Zooming for parameter NV ...
+Zooming for parameter PI ...
+Zooming for parameter EH ...</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                 Lower       Upper
+(Intercept)  1.4327458  7.95477715
+NV           1.2841117         Inf
+PI          -0.1370768  0.03818467
+EH          -4.7859125 -1.43638895
+attr(,"fitted object")
+fit</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(brglm2) <span class="co"># contains method for detecting infinite estimates</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(detectseparation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'detectseparation'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:brglm2':
+
+    check_infinite_estimates, detect_separation</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glm</span>(HG <span class="sc">~</span> NV <span class="sc">+</span> PI <span class="sc">+</span> EH, <span class="at">family =</span> binomial, <span class="at">data =</span> Endo, <span class="at">method =</span> <span class="st">"detectSeparation"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Implementation: ROI | Solver: lpsolve 
+Separation: TRUE 
+Existence of maximum likelihood estimates
+(Intercept)          NV          PI          EH 
+          0         Inf           0           0 
+0: finite value, Inf: infinity, -Inf: -infinity</code></pre>
+</div>
+</div>
+<p>The likelihood-ratio statistic for <span class="math inline">\(H_0 = \beta_1 = 0\)</span> is 9.36 with <span class="math inline">\(df = 1\)</span>, and p-value is <span class="math inline">\(0.002\)</span>.</p>
+<p>The <span class="math inline">\(95\%\)</span> profile likelihood CI for <span class="math inline">\(\beta_1\)</span> is <span class="math inline">\((1.28, \infty)\)</span>. So, we can conclude that <span class="math inline">\(\beta_1 &gt; 0\)</span> despite what the Wald p-value.</p>
+<p>The other ML estimates are not affected by the quasi-complete separation.</p>
+<p><br></p>
+</section>
+</section>
+<section id="alternative-link-functions" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-link-functions">Alternative link functions</h3>
+<p>identity link의 선형확률모형은 계수를 위험차처럼 해석할 수 있지만 예측확률이 <span class="math inline">\([0,1]\)</span>을 벗어날 수 있다. logit은 확률범위를 유지하며 오즈비 해석이 가능하고, probit은 정규 잠재변수의 임계값 모형이다. logit과 probit의 계수는 척도가 달라 직접 비교할 수 없다.</p>
+<section id="linear-probability-model" class="level4">
+<h4 class="anchored" data-anchor-id="linear-probability-model">(1) Linear probability model</h4>
+Model(GLM with a binomial random component with identity link function) :
+<div style="text-align:center">
+<p><span class="math inline">\(P(Y=1) = \alpha + \beta_1 x_1 + \cdots + \beta_p x_p\)</span></p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>Evo <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/alanagresti/categorical-data/master/Evolution2.dat"</span>, <span class="at">header =</span> T)</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>Evo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["ideology"],"name":[1],"type":["int"],"align":["right"]},{"label":["evolved"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"1"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"1","2":"0"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"1"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"2","2":"0"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"1"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"3","2":"0"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"1"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"4","2":"0"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"1"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"5","2":"0"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"1"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"6","2":"0"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"1"},{"1":"7","2":"0"},{"1":"7","2":"0"},{"1":"7","2":"0"},{"1":"7","2":"0"},{"1":"7","2":"0"},{"1":"7","2":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(evolved <span class="sc">~</span> ideology, <span class="at">family =</span> <span class="fu">quasi</span>(<span class="at">link =</span> identity, <span class="at">variance =</span> <span class="st">"mu(1-mu)"</span>), <span class="at">data =</span> Evo)</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit, <span class="at">dispersion =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = evolved ~ ideology, family = quasi(link = identity, 
+    variance = "mu(1-mu)"), data = Evo)
+
+Coefficients:
+            Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept) 0.108437   0.038932   2.785  0.00535 ** 
+ideology    0.110102   0.008971  12.273  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for quasi family taken to be 1)
+
+    Null deviance: 1469.3  on 1063  degrees of freedom
+Residual deviance: 1359.5  on 1062  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 3</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>fit2 <span class="ot">&lt;-</span> <span class="fu">glm</span>(evolved <span class="sc">~</span> ideology, <span class="at">family =</span> <span class="fu">gaussian</span>(<span class="at">link =</span> identity), <span class="at">data =</span> Evo)</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = evolved ~ ideology, family = gaussian(link = identity), 
+    data = Evo)
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  0.10554    0.04272    2.47   0.0137 *  
+ideology     0.11091    0.01033   10.73   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for gaussian family taken to be 0.2247506)
+
+    Null deviance: 264.57  on 1063  degrees of freedom
+Residual deviance: 238.69  on 1062  degrees of freedom
+AIC: 1435.2
+
+Number of Fisher Scoring iterations: 2</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coefficients</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept)    ideology 
+  0.1084375   0.1101021 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">coefficients</span>(fit2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept)    ideology 
+  0.1055373   0.1109063 </code></pre>
+</div>
+</div>
+</section>
+<section id="probit-model" class="level4">
+<h4 class="anchored" data-anchor-id="probit-model">(2) Probit model</h4>
+Model :
+<div style="text-align:center">
+<p><span class="math inline">\(probit(P(Y=1)) = \alpha + \beta_1 x_1 + \cdots + \beta_p x_p\)</span></p>
+</div>
+<p>Link function : probit link which transforms <span class="math inline">\(P(Y=1)\)</span> to the standard normal <span class="math inline">\(z-\)</span>score at which the left-tail probability equals <span class="math inline">\(P(Y=1)\)</span>. &nbsp; (ex : <span class="math inline">\(probit(0.05) = -1.645\)</span>, <span class="math inline">\(probit(0.50) = 0\)</span>)</p>
+<p>Suppose that a latent variable <span class="math inline">\(y^*\)</span> exists such that the observed binary variable <span class="math inline">\(y=0\)</span> if <span class="math inline">\(y^* \le \tau\)</span> and <span class="math inline">\(y=1\)</span> if <span class="math inline">\(y^* &gt; \tau\)</span> for some unknown threshold <span class="math inline">\(\tau\)</span>. <span class="math display">\[
+y^* = \alpha + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon
+\]</span></p>
+</section>
+<section id="example-snoring-and-heart-disease" class="level4">
+<h4 class="anchored" data-anchor-id="example-snoring-and-heart-disease">[Example : Snoring and heart disease]</h4>
+<p>Consider <span class="math inline">\(y^*\)</span> as a latent continuous measure of heart disease.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>Heart <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/alanagresti/categorical-data/master/Heart.dat"</span>, <span class="at">header =</span> T)</span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>Heart</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["snoring"],"name":[1],"type":["chr"],"align":["left"]},{"label":["yes"],"name":[2],"type":["int"],"align":["right"]},{"label":["no"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"never","2":"24","3":"1355"},{"1":"occasional","2":"35","3":"603"},{"1":"nearly_every_night","2":"21","3":"192"},{"1":"every_night","2":"30","3":"224"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:MASS':
+
+    select</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:car':
+
+    recode</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>Heart<span class="sc">$</span>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(yes<span class="sc">/</span>(yes <span class="sc">+</span> no) <span class="sc">~</span> x, <span class="at">family =</span> <span class="fu">binomial</span>(<span class="at">link =</span> probit), <span class="at">weights =</span> yes <span class="sc">+</span> no, <span class="at">data =</span> Heart)</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = yes/(yes + no) ~ x, family = binomial(link = probit), 
+    data = Heart, weights = yes + no)
+
+Coefficients:
+            Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept) -2.06055    0.07017 -29.367  &lt; 2e-16 ***
+x            0.18777    0.02348   7.997 1.28e-15 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 65.9045  on 3  degrees of freedom
+Residual deviance:  1.8716  on 2  degrees of freedom
+AIC: 26.124
+
+Number of Fisher Scoring iterations: 4</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fitted</span>(fit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         1          2          3          4 
+0.01967292 0.04599325 0.09518763 0.13099515 </code></pre>
+</div>
+</div>
+<p>The ML fit of the probit model is <span class="math inline">\(probit(\hat{P}(Y=1)) = -2.601 + 0.188x\)</span>.</p>
+<p>A 1-unit increase in <span class="math inline">\(x\)</span> corresponds to a 0.188 standard deviation increase in <span class="math inline">\(E(y^*)\)</span>. As <span class="math inline">\(x\)</span> increases from 0 to 5, the underlying latent distribution of heart disease shifts up by nearly a standard deviation. (5*0.188 = 0.94)</p>
+<p><br></p>
+</section>
+</section>
+<section id="resampling-methods" class="level3">
+<h3 class="anchored" data-anchor-id="resampling-methods">Resampling methods</h3>
+<p><br></p>
+<section id="bootstrap" class="level4">
+<h4 class="anchored" data-anchor-id="bootstrap">Bootstrap</h4>
+</section>
+<section id="cross-validation" class="level4">
+<h4 class="anchored" data-anchor-id="cross-validation">Cross Validation</h4>
+<ul>
+<li>Validation set approach</li>
+<li>Leave-One-Out Cross Validation</li>
+<li>k-fold Cross-Validation</li>
+</ul>
+<p>See https://afit-r.github.io/resampling_methods#boot</p>
+<p>http://rstudio-pubs-static.s3.amazonaws.com/13874_8be7a02691da4210bb4be6a945c3647c.html</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
