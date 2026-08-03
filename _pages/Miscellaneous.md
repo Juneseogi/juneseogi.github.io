@@ -57,6 +57,5 @@ Paper summaries prepared for the regular seminar of the Mathematical Data Scienc
 
 ### Textbook
 
-García-Portugués, E. (2026). *Nonparametric Statistics*. Version 7.0.3. ISBN 978-84-09-29537-1.
-
-[Study notes](/files/nonparametric-statistics-notes.pdf) · [Online textbook](https://egarpor.github.io/NP-UC3M/)
+-García-Portugués, E. (2026). *Nonparametric Statistics*. Version 7.0.3. ISBN 978-84-09-29537-1.
+ [Study notes](/files/nonparametric-statistics-notes.pdf) · [Online textbook](https://egarpor.github.io/NP-UC3M/)
