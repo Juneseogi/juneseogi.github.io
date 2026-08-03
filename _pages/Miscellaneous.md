@@ -14,7 +14,9 @@ Selected graduate and undergraduate coursework in statistics, mathematics, and p
 
 ## Lab Study Materials
 
-Paper summaries prepared for the regular seminar of the Mathematical Data Science Lab.
+Notes and summaries of papers and textbooks studied as part of my research in the Mathematical Data Science Lab.
+
+### Paper Summaries
 
 ### Paper
 
