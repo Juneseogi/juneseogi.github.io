@@ -16,8 +16,6 @@ Selected graduate and undergraduate coursework in statistics, mathematics, and p
 
 Notes and summaries of papers and textbooks studied as part of my research in the Mathematical Data Science Lab.
 
-### Paper Summaries
-
 ### Paper
 
 #### Lab Intro
