@@ -1,5 +1,4 @@
 ---
-title: "Coursework"
 permalink: /miscellaneous/coursework/
 author_profile: true
 ---
