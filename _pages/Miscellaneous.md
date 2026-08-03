@@ -14,9 +14,11 @@ Selected graduate and undergraduate coursework in statistics, mathematics, and p
 
 ## Lab Study Materials
 
-Paper summaries prepared as part of research activities in the Mathematical Data Science Lab.
+Paper summaries prepared for the regular seminar of the Mathematical Data Science Lab.
 
-### Lab Intro
+### Paper
+
+#### Lab Intro
 
 - **Density estimation and regression analysis on hyperspheres in the presence of measurement error**  
   Jeon, J. M., & Van Keilegom, I. (2024). *Scandinavian Journal of Statistics*, 51, 513–556.  
@@ -38,7 +40,7 @@ Paper summaries prepared as part of research activities in the Mathematical Data
   Jeon, J. M., Park, B. U., & Van Keilegom, I. (2021). *The Annals of Statistics*, 49(5), 2611–2641.  
   [summary notes, pp. 6–8](/files/lab-intro.pdf#page=6) · [original paper](https://doi.org/10.1214/21-AOS2048)
 
-### Fejér Likelihood
+#### Fejér Likelihood
 
 - **Flexible parametric approach to classical measurement error variance estimation without auxiliary data**  
   Bertrand, A., Van Keilegom, I., & Legrand, C. (2019). *Biometrics*, 75(1), 297–307.  
@@ -51,3 +53,10 @@ Paper summaries prepared as part of research activities in the Mathematical Data
 - **Deconvolution density estimation on Lie groups without auxiliary data**  
   Jeon, J. M. (2025). *Journal of Multivariate Analysis*, 209, 105464.  
   [summary notes, pp. 6–9](/files/fejer-likelihood.pdf#page=6) · [original paper](https://doi.org/10.1016/j.jmva.2025.105464)
+
+
+### Textbook
+
+García-Portugués, E. (2026). *Nonparametric Statistics*. Version 7.0.3. ISBN 978-84-09-29537-1.
+
+[Study notes](/files/nonparametric-statistics-notes.pdf) · [Online textbook](https://egarpor.github.io/NP-UC3M/)
