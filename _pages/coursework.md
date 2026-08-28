@@ -30,7 +30,8 @@ author_profile: true
 
 #### Graduate Level
 
-- Real Analysis
+- Real Analysis I
+- Real Analysis II
 - Advanced Partial Differential Equations
 - Advanced Topology
 - Probability and Statistics
@@ -50,6 +51,7 @@ author_profile: true
 - Real Variables
 - Topics in Analysis
 - Computational Mathematics
+- Stochastic Differential Equations
 
 ### Psychology
 
