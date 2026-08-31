@@ -51,7 +51,6 @@ author_profile: true
 - Real Variables
 - Topics in Analysis
 - Computational Mathematics
-- Stochastic Differential Equations
 
 ### Psychology
 
