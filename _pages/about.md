@@ -8,7 +8,7 @@ redirect_from:
 
 Hello! I'm **Junseok Lee.**
 
-I am a master’s student in the Department of Statistics at Seoul National University and a member of the Mathematical Data Science Lab, where I am advised by Professor Jeongmin Jeon. My research focuses on statistical methods for complex data structures, particularly non-Euclidean data and data subject to measurement error.
+I am a master’s student in the Department of Statistics at Seoul National University and a member of the Mathematical Data Science Lab, where I am advised by Professor Jeong Min Jeon. My research focuses on statistical methods for complex data structures, particularly non-Euclidean data and data subject to measurement error.
 My research interests include:
 
 - Non-Euclidean statistical analysis
