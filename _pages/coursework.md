@@ -30,7 +30,6 @@ author_profile: true
 #### Graduate Level
 
 - Real Analysis I
-- Real Analysis II
 - Advanced Partial Differential Equations
 - Advanced Topology
 - Probability and Statistics
