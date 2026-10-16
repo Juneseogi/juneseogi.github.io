@@ -12,9 +12,9 @@ author_profile: true
 * Applications in the social sciences
 
 ## Publications
-- **Lee, J.** and Jeon, J. (2026+). **Fejér-Positive Sieve Likelihood for Circular Measurement Error Models without Auxiliary Data.**, *Submitted to the Electronic Journal of Statistics.*
+- **Lee, J.** and Jeon, J. M. (2026+). **Fejér-Positive Sieve Likelihood for Circular Measurement Error Models without Auxiliary Data.**, *Submitted to the Electronic Journal of Statistics.*
 - Anonymous authors. (2026+). **Pointwise Inference for Geodesic Kernel Density and Regression Estimators on Riemannian Manifolds.**, *In preparation.*
-- **Lee, J.** and Jeon, J. (2026+). **Deconvolution Density Estimation on Hyperspheres with Unknown Measurement Error Distributions.**, *In preparation.*
+- **Lee, J.** and Jeon, J. M. (2026+). **Deconvolution Density Estimation on Hyperspheres with Unknown Measurement Error Distributions.**, *In preparation.*
 
 ## Presentations
 ### Seoul National University
