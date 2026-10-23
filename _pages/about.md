@@ -12,8 +12,8 @@ I am a master’s student in the Department of Statistics at Seoul National Univ
 My research interests include:
 
 - Non-Euclidean statistical analysis
-- Measurement error
 - Nonparametric statistical inference
+- Measurement error
 - Psychometrics
 - Applications in the social sciences
 
