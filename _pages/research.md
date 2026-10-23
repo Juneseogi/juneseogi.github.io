@@ -6,8 +6,8 @@ author_profile: true
 ## Research Interests
 
 * Non-Euclidean statistical analysis
-* Measurement error
 * Nonparametric statistical inference
+* Measurement error
 * Psychometrics
 * Applications in the social sciences
 
