@@ -19,7 +19,7 @@ author_profile: true
 ## Presentations
 ### Seoul National University
 - Invited Talk, *Kyushu–SNU Statistics and Data Science Workshop*, Fukuoka, Japan, Nov. 2025  
-  **Constructing Conformal Predictive Distributions via Kernel-Localized Residuals**  
+  **Constructing Conformal Predictive Distributions via Kernel-Localized Residuals.**  
   [[Slides]](/files/SNU_Kyushu_Workshop.pdf)
 
 ### Sungkyunkwan University
