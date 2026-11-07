@@ -10,7 +10,7 @@ author_profile: true
 #### Graduate Level
 
 - Advanced Regression Analysis
-- Probability Theory I, II
+- Probability Theory I, II [[Study materials]](/Miscellaneous/probability_theory/)
 - Theory of Statistics I, II
 - Applied Statistics [[Study materials]](/Miscellaneous/applied_statistics/)
 - Statistical Machine Learning
