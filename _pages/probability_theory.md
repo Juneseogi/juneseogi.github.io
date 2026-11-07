@@ -1,4 +1,4 @@
-permalink: /Miscellaneous/probability_thoery/
+permalink: /Miscellaneous/probability_theory/
 author_profile: true
 ---
 This page contains study materials for Probability Theory I, II (326.513, 326.516).
