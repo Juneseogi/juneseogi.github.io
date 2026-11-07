@@ -1,3 +1,4 @@
+---
 permalink: /Miscellaneous/probability_theory/
 author_profile: true
 ---
