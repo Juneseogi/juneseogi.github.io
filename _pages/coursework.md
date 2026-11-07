@@ -11,7 +11,7 @@ author_profile: true
 
 - Advanced Regression Analysis
 - Probability Theory I, II [[Study materials]](/Miscellaneous/probability_theory/)
-- Theory of Statistics I, II
+- Theory of Statistics I, II [[Study materials]](/Miscellaneous/theory_of_statistics/)
 - Applied Statistics [[Study materials]](/Miscellaneous/applied_statistics/)
 - Statistical Machine Learning
 - Deep Learning: Statistical Perspective
