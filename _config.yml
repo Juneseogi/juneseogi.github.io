@@ -9,9 +9,6 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Junseok Lee"
-title_separator          : "-"
-
 title : "Junseok Lee (이준석) | Seoul National University"
 title_separator : "-"
 name : &name "Junseok Lee"
