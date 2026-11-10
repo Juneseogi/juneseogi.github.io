@@ -1,10 +1,13 @@
+
 ---
 permalink: /
 author_profile: true
-redirect_from: 
+description: "Junseok Lee (이준석) is a master's student in Statistics at Seoul National University, researching nonparametric statistics, non-Euclidean data analysis, and measurement error models."
+redirect_from:
   - /about/
   - /about.html
 ---
+
 
 Hello! I'm **Junseok Lee.**
 
