@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title : "Junseok Lee (이준석) | Seoul National University"
+title : "Junseok Lee (이준석)"
 title_separator : "-"
 name : &name "Junseok Lee"
 description : &description "Junseok Lee (이준석) is a master's student in Statistics at Seoul National University. His research interests include nonparametric statistics, non-Euclidean data analysis, and measurement error models."
