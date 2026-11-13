@@ -35,6 +35,8 @@ author_profile: true
 - Probability and Statistics
 - Financial Mathematics
 - Probabilistic Generative Models
+- Functional Analysis
+- Harmonic Analysis
 
 #### Undergraduate Level
 
