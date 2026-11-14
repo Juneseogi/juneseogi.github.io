@@ -14,7 +14,8 @@ author_profile: true
 ## Publications
 - **Lee, J.** and Jeon, J. M. (2026). **Fejér-Positive Sieve Likelihood for Circular Measurement Error Models without Auxiliary Data.**, *Submitted to the Electronic Journal of Statistics.*
 - **Lee, J.** and Jeon, J. M. (2026). **Deconvolution Density Estimation on Hyperspheres with Unknown Measurement Error Distributions.**, *Submitted to the Journal of the American Statistical Association.*
-- Anonymous authors. **Pointwise Inference for Geodesic Kernel Density and Regression Estimators on Riemannian Manifolds.**, *In preparation.*
+- **Lee, J**., Lee, J., Ryu, S., and Jeon, J. M. (2026). **Pointwise Confidence Intervals for Geodesic Kernel Density and Regression
+Estimators on Riemannian Manifolds.** *Submitted to the Journal of Nonparametric Statistics.*
 
 ## Presentations
 ### Seoul National University
