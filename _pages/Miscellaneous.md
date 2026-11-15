@@ -19,6 +19,9 @@ Notes and summaries of papers and textbooks studied as part of my research in th
 
 #### Lab Intro
 
+- **Flexible parametric approach to classical measurement error variance estimation without auxiliary data**  
+  Bertrand, A., Van Keilegom, I., & Legrand, C. (2019). *Biometrics*, 75(1), 297–307.  
+  [summary notes](/files/Flexible%20parametric%20approach%20to%20classical%20measurement%20error%20variance%20estimation%20without%20auxiliary%20data.pdf) · [original paper](https://doi.org/10.1111/biom.12960)
 
 - **Density estimation and regression analysis on hyperspheres in the presence of measurement error**  
   Jeon, J. M., & Van Keilegom, I. (2024). *Scandinavian Journal of Statistics*, 51, 513–556.  
@@ -36,6 +39,10 @@ Notes and summaries of papers and textbooks studied as part of my research in th
   Jeon, J. M. (2025). *Journal of Multivariate Analysis*, 209, 105464.  
   [summary notes](/files/Deconvolution%20density%20estimation%20on%20Lie%20groups%20without%20auxiliary%20data.pdf) · [original paper](https://doi.org/10.1016/j.jmva.2025.105464)
 
+- **Nonparametric estimation on the circle based on Fejér polynomials**  
+  Klar, B., Milošević, B., & Obradović, M. (2024). *arXiv preprint arXiv:2411.19138*.  
+  [summary notes](/files/Nonparametric%20estimation%20on%20the%20circle%20based%20on%20Fejer%20polynomials.pdf) · [original paper](https://arxiv.org/abs/2411.19138)
+
 - **Local Fréchet regression with spherical predictors**  
   Im, C. J., Jeon, J. M., & Park, B. U. (2025). *Electronic Journal of Statistics*, 19(2), 5313–5367.  
   [summary notes](/files/Local%20Fr%C3%A9chet%20regression%20with%20spherical%20predictors.pdf) · [original paper](https://doi.org/10.1214/25-EJS2462)
@@ -44,13 +51,6 @@ Notes and summaries of papers and textbooks studied as part of my research in th
   Jeon, J. M., Park, B. U., & Van Keilegom, I. (2021). *The Annals of Statistics*, 49(5), 2611–2641.  
   [summary notes](/files/Additive%20regression%20for%20non-Euclidean%20responses%20and%20predictors.pdf) · [original paper](https://doi.org/10.1214/21-AOS2048)
 
-- **Flexible parametric approach to classical measurement error variance estimation without auxiliary data**  
-  Bertrand, A., Van Keilegom, I., & Legrand, C. (2019). *Biometrics*, 75(1), 297–307.  
-  [summary notes](/files/Flexible%20parametric%20approach%20to%20classical%20measurement%20error%20variance%20estimation%20without%20auxiliary%20data.pdf) · [original paper](https://doi.org/10.1111/biom.12960)
-
-- **Nonparametric estimation on the circle based on Fejér polynomials**  
-  Klar, B., Milošević, B., & Obradović, M. (2024). *arXiv preprint arXiv:2411.19138*.  
-  [summary notes](/files/Nonparametric%20estimation%20on%20the%20circle%20based%20on%20Fejer%20polynomials.pdf) · [original paper](https://arxiv.org/abs/2411.19138)
 
 
 
