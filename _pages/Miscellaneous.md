@@ -15,9 +15,7 @@ Selected graduate and undergraduate coursework in statistics, mathematics, and p
 
 Notes and summaries of papers and textbooks studied as part of my research in the Mathematical Data Science Lab.
 
-### Paper
-
-#### Lab Intro
+### Papers
 
 - **Flexible parametric approach to classical measurement error variance estimation without auxiliary data**  
   Bertrand, A., Van Keilegom, I., & Legrand, C. (2019). *Biometrics*, 75(1), 297–307.  
@@ -54,7 +52,7 @@ Notes and summaries of papers and textbooks studied as part of my research in th
 
 
 
-### Textbook
+### Textbooks
 
 - García-Portugués, E. (2026). *Nonparametric Statistics*. Version 7.0.3. ISBN 978-84-09-29537-1.  
   [summary notes](/files/nonparametric-statistics-notes.pdf) · [online textbook](https://egarpor.github.io/NP-UC3M/)
