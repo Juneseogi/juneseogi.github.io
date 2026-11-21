@@ -21,7 +21,6 @@ Estimators on Riemannian Manifolds.** *Submitted to the Journal of Nonparametric
 ### Seoul National University
 - Invited Talk, *Kyushu–SNU Statistics and Data Science Workshop*, Fukuoka, Japan, Nov. 2025  
   **Constructing Conformal Predictive Distributions via Kernel-Localized Residuals.**  
-  [[Slides]](/files/SNU_Kyushu_Workshop.pdf)
 
 ### Sungkyunkwan University
 - Presenter, *The 15th Psychology Research Conference, Sungkyunkwan University*, Seoul, Korea, Nov. 2019
